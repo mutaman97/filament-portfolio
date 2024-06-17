@@ -1,0 +1,222 @@
+/*------------------------------------------------------------------
+[Master Stylesheet - TailwindCSS src file]
+
+Project Name  :     Minfo - Tailwind CSS Personal Resume/vCard Template
+Version       :     1.1
+Last Update   :     06 February 2024
+Author	      :	    ThemeArray
+Support	      :	    themearray@gmail.com
+------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1.  Tailwind's Base styles
+2.  Tailwind's Components styles
+3.  Tailwind's Utilities styles
+4.  Tailwind Base Layer
+    4.1    Root Variables
+    4.2    Global Typography
+5. Custom Utilities Layer
+6. Preloader
+7. Custom Cursor Style
+8. Template Sidebar Custom Style
+9. Custom Styles
+------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[1. Tailwind's Base styles]
+------------------------------------------------------------------*/
+@tailwind base;
+/*------------------------------------------------------------------
+[2. Tailwind's Components styles]
+------------------------------------------------------------------*/
+@tailwind components;
+/*------------------------------------------------------------------
+[3. Tailwind's Utilities styles]
+------------------------------------------------------------------*/
+@tailwind utilities;
+/*------------------------------------------------------------------
+[4. Tailwind Base Layer]
+------------------------------------------------------------------*/
+@layer base {
+    /*------------------------------------------------------------------
+    [4.1 Root Variables]
+    ------------------------------------------------------------------*/
+    :root {
+        --snowWhite         :#F2F5F8;
+
+        --flashWhite        :#F0F2F5;
+
+        --platinum          :#E8E8E8;
+
+        --colorGray         :#999999;
+
+        --colorSilver         :#707070;
+
+        --themeColor        :#00bc91;
+
+        --themeHoverColor   :#069c7a;
+
+        --power__black      :#18191a;
+
+        --nightBlack        :#212223;
+
+        --metalBlack        :#2d2e2f;
+
+        --lightOrange       :#ffb657;
+
+        --greyBlack         :#434445;
+
+        --greyBlack200      :#333333;
+    }
+    /*------------------------------------------------------------------
+    [4.2 Global Typography]
+    ------------------------------------------------------------------*/
+    html {
+        -webkit-text-size-adjust: 100%;
+    }
+    body {
+        @apply text-base leading-1.875 text-colorSilver dark:text-colorGray bg-snowWhite dark:bg-power__black;
+    }
+    p {
+        @apply text-regular lg:text-base lg:leading-1.875 text-colorSilver dark:text-colorGray;
+    }
+    img,
+    svg,
+    video,
+    canvas,
+    audio,
+    iframe,
+    embed,
+    object {
+        @apply inline-block;
+    }
+    input:not([type='checkbox']),
+    input:not([type='radio']),
+    input:not([type='file']),
+    textarea {
+        @apply text-sm font-light text-black dark:text-white bg-transparent border rounded-md border-platinum dark:border-greyBlack;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+        -webkit-text-fill-color: white;
+        -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+        transition: background-color 5000s ease-in-out 0s;
+    }
+}
+/*------------------------------------------------------------------
+[5. Utilities Layer]
+------------------------------------------------------------------*/
+@layer utilities {
+    .animate-delay-2s {
+        animation-delay: 2s;
+    }
+    .animate-delay-3s {
+        animation-delay: 3s;
+    }
+    .flex-center {
+        @apply flex items-center justify-center;
+    }
+    .inline-flex-center {
+        @apply inline-flex items-center justify-center;
+    }
+    .position-center {
+        @apply absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2;
+    }
+    .stretched-link::after {
+        @apply absolute inset-0 z-[1] content-[''];
+    }
+}
+/*------------------------------------------------------------------
+[6. Preloader]
+------------------------------------------------------------------*/
+#preloader {
+    @apply fixed inset-0 z-[99999] flex before:content-[''] before:absolute before:left-0 before:top-0 before:w-1/2 before:h-full before:z-[-1] before:bg-snowWhite dark:before:bg-power__black before:transition-all before:ease-in-out before:duration-300 after:content-[''] after:absolute after:left-auto after:right-0 after:top-0 after:w-1/2 after:h-full after:z-[-1] after:bg-snowWhite dark:after:bg-power__black after:transition-all after:ease-in-out after:duration-300;
+}
+#preloader .loader_line {
+    @apply m-auto w-px h-[25rem] relative overflow-hidden before:content-[''] before:absolute before:left-0 before:w-[.1rem] before:top-1/2 before:h-[0%] before:-translate-y-1/2 before:bg-nightBlack dark:before:bg-white before:animate-lineheight after:content-[''] after:absolute after:left-0 after:w-px after:top-0 after:h-full after:bg-[#999] after:-translate-y-full;
+    transition: all 0.8s ease 0s;
+}
+.loader_line:after {
+    @apply animate-lineround;
+}
+.preloaded .loader_line:after,
+.preloaded .logo {
+    @apply opacity-0;
+}
+.preloaded .loader_line {
+    @apply opacity-0 !h-full;
+}
+.preloaded:after,
+.preloaded:before {
+    @apply animate-preloadedzero;
+}
+/*------------------------------------------------------------------
+[7. Custom Cursor Style]
+------------------------------------------------------------------*/
+.custom_cursor_one {
+    @apply max-md:hidden z-[99999];
+    transition: all 100ms ease-out;
+}
+.custom_cursor_two {
+    @apply max-md:hidden z-[99999];
+    transition: width 0.3s, height 0.3s, opacity 0.3s;
+}
+/*------------------------------------------------------------------
+[8. Template Sidebar Custom Style]
+------------------------------------------------------------------*/
+.minfo__sidebar {
+    -webkit-clip-path: url(#my-clip-path);
+    clip-path: url(#my-clip-path);
+}
+.minfo__sidebar__wrapper .sidebar__menu::-webkit-scrollbar {
+    @apply hidden;
+}
+.minfo__sidebar__wrapper .sidebar__menu {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.menu i,
+.share button i {
+    font-weight: 400;
+    opacity: .6;
+}
+.dark .menu i,
+.dark .share button i {
+    font-weight: 300;
+    opacity: 1;
+}
+.topbutton {
+    @apply fixed right-4 xl:right-7 2xl:right-16 bottom-6 xl:bottom-10 w-13 h-13 text-lg rounded-full bg-white dark:bg-nightBlack dark:text-white shadow-sm shadow-slate-400 grid place-content-center text-black opacity-0 invisible transition duration-200 [&.btn-show]:opacity-100 [&.btn-show]:visible z-[9999];
+}
+/*------------------------------------------------------------------
+[9. Custom Styles]
+------------------------------------------------------------------*/
+.logo-slider .swiper-wrapper {
+    transition-timing-function: linear;
+}
+.service-card-wrapper .number,
+.portfolio_wrapper .info span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;
+}
+html.dark .service-card-wrapper .number,
+html.dark .portfolio_wrapper .info span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+/*------------------------------------------------------------------
+                THANKS FOR HAVING WITH MINFO
+------------------------------------------------------------------*/
+

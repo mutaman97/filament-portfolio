@@ -9,7 +9,7 @@ use App\Models\Setting;
 use Illuminate\View\Component;
 use Illuminate\Contracts\View\View;
 
-class Section extends Component
+class MinfoSection extends Component
 {
     /**
      * Create a new component instance.
@@ -24,7 +24,7 @@ class Section extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.footer.section', [
+        return view('components.footer.minfo-section', [
             'info' => Layout::query()
                 ->select([
                     'newsletter_section_title',
