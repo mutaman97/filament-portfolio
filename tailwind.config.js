@@ -88,6 +88,7 @@ darkMode: 'class',
                 lightOrange: 'var(--lightOrange)',
                 greyBlack: 'var(--greyBlack)',
                 greyBlack200: 'var(--greyBlack200)',
+
                 primary: colors.purple, // accent color
                 secondary: colors.zinc, // choose a dark color.
                 tertiary: colors.rose, // highlight effects color
