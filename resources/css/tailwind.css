@@ -195,9 +195,9 @@ Support	      :	    themearray@gmail.com
     font-weight: 300;
     opacity: 1;
 }
-.topbutton {
-    @apply fixed right-4 xl:right-7 2xl:right-16 bottom-6 xl:bottom-10 w-13 h-13 text-lg rounded-full bg-white dark:bg-nightBlack dark:text-white shadow-sm shadow-slate-400 grid place-content-center text-black opacity-0 invisible transition duration-200 [&.btn-show]:opacity-100 [&.btn-show]:visible z-[9999];
-}
+/*.topbutton {*/
+/*    @apply fixed right-4 xl:right-7 2xl:right-16 bottom-6 xl:bottom-10 w-13 h-13 text-lg rounded-full bg-white dark:bg-nightBlack dark:text-white shadow-sm shadow-slate-400 grid place-content-center text-black opacity-0 invisible transition duration-200 [&.btn-show]:opacity-100 [&.btn-show]:visible z-[9999];*/
+/*}*/
 /*------------------------------------------------------------------
 [9. Custom Styles]
 ------------------------------------------------------------------*/

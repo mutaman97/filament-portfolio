@@ -38,6 +38,7 @@ null, 'portfolio_core' => null, 'clients_core' => null, 'contact_core' => null, 
                 class="menu-overlay fixed top-0 left-0 w-full h-full bg-black/60 transition-all duration-200 z-999 opacity-0 invisible [&.is-menu-open]:visible [&.is-menu-open]:opacity-100">
             </div>
             <div class="max-lg:px-4">
+                <x-ui.chatbox />
 
                 <!-- Mobile Menu Bar Start -->
                 <div
@@ -397,31 +398,31 @@ null, 'portfolio_core' => null, 'clients_core' => null, 'contact_core' => null, 
                     <!-- Main Menu/Navigation End -->
 
                     <!-- Share Button Wrapper Start -->
-                    <div class="relative share group">
-                        <button
-                            class="w-10 h-10 text-sm border rounded-full border-platinum dark:border-metalBlack flex-center group-hover:bg-white dark:group-hover:bg-metalBlack text-black dark:text-white"
-                            aria-label="Share">
-                            <i class="fal fa-share-alt"></i>
-                        </button>
+{{--                    <div class="relative share group">--}}
+{{--                        <button--}}
+{{--                            class="w-10 h-10 text-sm border rounded-full border-platinum dark:border-metalBlack flex-center group-hover:bg-white dark:group-hover:bg-metalBlack text-black dark:text-white"--}}
+{{--                            aria-label="Share">--}}
+{{--                            <i class="fal fa-share-alt"></i>--}}
+{{--                        </button>--}}
 
-                        <!-- Social Share Icon Start  -->
-                        <div
-                            class="absolute bottom-0 flex items-center invisible px-5 py-6 space-x-3 transition-all duration-300 -translate-y-1/2 opacity-0 social-icons top-1/2 bg-white dark:bg-nightBlack rounded-4xl right-6 group-hover:opacity-100 group-hover:visible group-hover:right-10 -z-1">
-                            <a href="#" class="flex transition duration-200 hover:text-theme" title="Share with Facebook">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                            <a href="#" class="flex transition duration-200 hover:text-theme" title="Share with Linkedin">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="#" class="flex transition duration-200 hover:text-theme" title="Share with X">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="flex transition duration-200 hover:text-theme" title="Share with X">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
-                        <!-- Social Share Icon End  -->
-                    </div>
+{{--                        <!-- Social Share Icon Start  -->--}}
+{{--                        <div--}}
+{{--                            class="absolute bottom-0 flex items-center invisible px-5 py-6 space-x-3 transition-all duration-300 -translate-y-1/2 opacity-0 social-icons top-1/2 bg-white dark:bg-nightBlack rounded-4xl right-6 group-hover:opacity-100 group-hover:visible group-hover:right-10 -z-1">--}}
+{{--                            <a href="#" class="flex transition duration-200 hover:text-theme" title="Share with Facebook">--}}
+{{--                                <i class="fab fa-facebook"></i>--}}
+{{--                            </a>--}}
+{{--                            <a href="#" class="flex transition duration-200 hover:text-theme" title="Share with Linkedin">--}}
+{{--                                <i class="fab fa-linkedin-in"></i>--}}
+{{--                            </a>--}}
+{{--                            <a href="#" class="flex transition duration-200 hover:text-theme" title="Share with X">--}}
+{{--                                <i class="fab fa-twitter"></i>--}}
+{{--                            </a>--}}
+{{--                            <a href="#" class="flex transition duration-200 hover:text-theme" title="Share with X">--}}
+{{--                                <i class="fab fa-instagram"></i>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                        <!-- Social Share Icon End  -->--}}
+{{--                    </div>--}}
                     <!-- Share Button Wrapper End -->
 
                 </div>
@@ -558,6 +559,9 @@ null, 'portfolio_core' => null, 'clients_core' => null, 'contact_core' => null, 
                     </div>
                     <!-- Hero/Introduction Section End -->
 
+                    @if($hero_core)
+                        <x-hero.minfo-section />
+                    @endif
 
                     <!-- About Me Section Start -->
                     <div data-scroll-index="1" id="about"
