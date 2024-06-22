@@ -4,18 +4,20 @@
          class="py-5 xl:py-3.5 max-w-content xl:max-2xl:max-w-50rem max-xl:mx-auto xl:ml-auto">
 
         <div class="px-5 py-8 bg-white dark:bg-nightBlack rounded-2xl contact-section lg:p-13">
-            @if($info->contact_section_title)
+            @if($info->contact_section_subtitle_text)
             <div
                 class="inline-flex items-center gap-2 px-4 py-2 text-xs tracking-wide text-black dark:text-white border lg:px-5 section-name border-platinum dark:border-greyBlack200 rounded-4xl">
                 <i class="fal fa-envelope-open text-theme"></i>
-                {!! $info->contact_section_title !!}
+                {!! $info->contact_section_subtitle_text !!}
             </div>
             @endif
             <div class="mb-10 mt-7 section-title">
+                @if($info->contact_section_title)
                 <h2
                     class="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
-                    Contact <span class="font-semibold text-theme">Me.</span>
+                    {!! $info->contact_section_title !!}
                 </h2>
+                @endif
                 <p class="mt-3.5 md:mt-5 subtitle max-w-sectionTitle">
                     I design products that are more than pretty. I make them shippable and usable, ttempor
                     non mollit dolor et do aute

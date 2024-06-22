@@ -28,20 +28,24 @@
         </div>
         @endif
         <div class="mt-6 section-content">
+            @if($skills)
             <div class="inline-flex flex-wrap items-center gap-2 mb-5 text-sm md:gap-4">
+                @foreach($skills as $skill)
                 <a href="#"
                    class="inline-block px-3.5 py-2 transition duration-300 border border-dashed text-black dark:text-white/70 border-platinum dark:border-greyBlack rounded-3xl md:px-5 md: md:py-2 hover:text-theme dark:hover:text-white">
-                    {{  __('HTML5 & CSS3 (94%)') }}
+                    {{ $skill->name }} ({{ $skill->rate }})
                 </a>
-                <a href="#"
-                   class="inline-block px-3.5 py-2 transition duration-300 border border-dashed text-black dark:text-white/70 border-platinum dark:border-greyBlack rounded-3xl md:px-5 md: md:py-2 hover:text-theme dark:hover:text-white">
-                    {{ __('Bootstrap (98%)') }}
-                </a>
-                <a href="#"
-                   class="inline-block px-3.5 py-2 transition duration-300 border border-dashed text-black dark:text-white/70 border-platinum dark:border-greyBlack rounded-3xl md:px-5 md: md:py-2 hover:text-theme dark:hover:text-white">
-                    {{ __('TailwindCSS (90%)') }}
-                </a>
+                @endforeach
+{{--                <a href="#"--}}
+{{--                   class="inline-block px-3.5 py-2 transition duration-300 border border-dashed text-black dark:text-white/70 border-platinum dark:border-greyBlack rounded-3xl md:px-5 md: md:py-2 hover:text-theme dark:hover:text-white">--}}
+{{--                    {{ __('Bootstrap (98%)') }}--}}
+{{--                </a>--}}
+{{--                <a href="#"--}}
+{{--                   class="inline-block px-3.5 py-2 transition duration-300 border border-dashed text-black dark:text-white/70 border-platinum dark:border-greyBlack rounded-3xl md:px-5 md: md:py-2 hover:text-theme dark:hover:text-white">--}}
+{{--                    {{ __('TailwindCSS (90%)') }}--}}
+{{--                </a>--}}
             </div>
+            @endif
 
             <ul class="grid mt-4 mb-10 text-sm lg:mt-6 md:grid-cols-2 gap-x-8 gap-y-3">
                 <li class="flex items-center">

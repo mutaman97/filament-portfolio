@@ -13,8 +13,7 @@
             @if($info->portfolio_section_title)
             <h2
                 class="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
-                {{--Featured <span class="font-semibold text-theme">Projects</span>--}}
-                {!! (count($words = explode(' ', $info->portfolio_section_title)) > 1) ? $words[0] . ' <span class="font-semibold text-theme">' . $words[1] . '</span> ' . implode(' ', array_slice($words, 2)) : $info->portfolio_section_title !!}
+                {!! $info->portfolio_section_title !!}
             </h2>
             @endif
             @if($info->portfolio_section_subtitle_text)

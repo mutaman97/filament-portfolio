@@ -18,9 +18,9 @@ class SettingFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => 'Warriorfusion v2',
+            'name' => 'Mutaman Portfolio',
             'meta_title' => 'Building the what\'s next with Laravel, Filament and Tailwind CSS',
-            'meta_author' => 'Marcos Coelho',
+            'meta_author' => 'Mutaman',
             'meta_description' => 'Warriorfusion is a free and open-source web application for creating and managing your own website.',
             'meta_keywords' => 'warriorfusion, warriorfusion 2, warriorfusion cms, warriorfusion cms 2, warriorfusion 2 cms',
         ];

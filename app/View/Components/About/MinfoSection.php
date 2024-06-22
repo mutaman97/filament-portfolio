@@ -2,6 +2,7 @@
 
 namespace App\View\Components\About;
 
+use App\Models\Skill;
 use App\Models\Slideshow;
 use Closure;
 use App\Models\Course;
@@ -36,6 +37,10 @@ class MinfoSection extends Component
             'courses' => Course::all()
                 ->sortDesc()
                 ->take(5),
+            'skills' => Skill::query()
+                ->orderBy('created_at', 'desc')
+                ->take(12)
+                ->get(),
             'info' => Layout::query()
                 ->select([
                     'about_section_fill',

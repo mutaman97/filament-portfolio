@@ -48,23 +48,15 @@
                 <x-ui.social-network />
         </div>
         <div class="px-4 py-5 lg:py-6 lg:px-6 rounded-2xl md:px-8 bg-flashWhite dark:bg-metalBlack">
-
-            @if($profile->skills)
-                @php
-                    $skills = explode(',', $profile->skills);
-                    $limitedSkills = array_slice($skills, 0, 4);
-                @endphp
+            @if($skills)
                 <div class="text-sm font-medium text-black dark:text-white">{{  __('Skills') }}</div>
                 <div class="flex items-center justify-between my-4 space-x-4 skills_circle">
-                    @foreach($limitedSkills as $skill)
-                    @php
-                        $rand = rand(80, 95);
-                    @endphp
+                    @foreach($skills as $skill)
                         <div class="space-y-2 text-center progressCircle">
-                            <div class="relative w-12 h-12 circle" data-percent="{{ $rand }}">
-                                <div class="absolute inset-0 text-[13px] font-medium label flex-center">{{ $rand }}</div>
+                            <div class="relative w-12 h-12 circle" data-percent="{{ $skill->rate }}">
+                                <div class="absolute inset-0 text-[13px] font-medium label flex-center">{{ $skill->rate }}</div>
                             </div>
-                            <p class="text-[13px] font-normal dark:font-light text-black dark:text-white/90">{{ $skill }}</p>
+                            <p class="text-[13px] font-normal dark:font-light text-black dark:text-white/90">{{ \Illuminate\Support\Str::limit($skill->name, 8, '') }}</p>
                         </div>
                     @endforeach
                 </div>

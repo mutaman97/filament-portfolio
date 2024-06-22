@@ -2,25 +2,25 @@
 
 namespace App\Filament\Resources;
 
+use App\Models\Experience;
 use Filament\Forms;
 use Filament\Forms\Components\RichEditor;
 use Filament\Tables;
-use App\Models\Course;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
 use Filament\Forms\Components\Section;
 use Filament\Tables\Actions\ActionGroup;
 use Illuminate\Database\Eloquent\Builder;
-use App\Filament\Resources\CourseResource\Pages;
+use App\Filament\Resources\ExperienceResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Resources\CourseResource\RelationManagers;
+use App\Filament\Resources\ExperienceResource\RelationManagers;
 
-class CourseResource extends Resource
+class ExperienceResource extends Resource
 {
-    protected static ?string $model = Course::class;
+    protected static ?string $model = Experience::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-academic-cap';
+    protected static ?string $navigationIcon = 'heroicon-o-briefcase';
 //    public static function getNavigationGroup(): ?string
 //    {
 //        return __('App Sections');
@@ -31,7 +31,7 @@ class CourseResource extends Resource
 //    }
     public static function getNavigationLabel(): string
     {
-        return __('Courses');
+        return __('Experiences');
     }
     public static function getNavigationBadge(): ?string
     {
@@ -45,13 +45,13 @@ class CourseResource extends Resource
     {
         return $form
             ->schema([
-                Section::make('Course Information')
+                Section::make('Experience Information')
                     ->description('This information will be displayed publicly.')
-                    ->icon('heroicon-o-academic-cap')
+                    ->icon('heroicon-o-briefcase')
                     ->columns(3)
                     ->schema([
                         Forms\Components\TextInput::make('name')
-                            ->label('Course Name')
+                            ->label('Experience Name')
                             ->helperText('The name of the course. Maximum of 255 characters.')
                             ->required()
                             ->columnSpan(1)
@@ -86,7 +86,7 @@ class CourseResource extends Resource
                             ->required(),
                         Forms\Components\Select::make('status')
                             ->label('Status')
-                            ->helperText('The status of the course')
+                            ->helperText('The status of the job')
                             ->options([
                                 'in-progress' => 'In Progress',
                                 'completed' => 'Completed',
@@ -115,7 +115,7 @@ class CourseResource extends Resource
                         'info' => 'ongoing',
                     ]),
                 Tables\Columns\TextColumn::make('name')
-                    ->label('Course Name')
+                    ->label('Experience Name')
                     ->searchable()
                     ->sortable(),
                 Tables\Columns\TextColumn::make('institution')
@@ -158,9 +158,9 @@ class CourseResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListCourses::route('/'),
-            'create' => Pages\CreateCourse::route('/create'),
-            'edit' => Pages\EditCourse::route('/{record}/edit'),
+            'index' => Pages\ListExperiences::route('/'),
+            'create' => Pages\CreateExperience::route('/create'),
+            'edit' => Pages\EditExperience::route('/{record}/edit'),
         ];
     }
 }

@@ -17,8 +17,8 @@ class ProfileFactory extends Factory
     public function definition(): array
     {
         return [
-            'localization' => 'Rio de Janeiro, Brazil',
-            'job_position' => 'Full Stack Developer',
+            'localization' => 'Sharjah, United Arab Emirates',
+            'job_position' => 'Full Stack Web Developer',
             'dribbble' => 'www.dribbble.com/#',
             'github' => 'www.github.com/#',
             'linkedin' => 'www.linkedin.com/in/#',

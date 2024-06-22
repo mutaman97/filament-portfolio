@@ -14,7 +14,7 @@
                 <h1
                     class="text-[32px] lg:text-5xl xl:text-4xl 2xl:text-5xl font-semibold text-black dark:text-white leading-1.27 lg:leading-1.27 xl:leading-1.27 2xl:leading-1.27 mb-4 lg:mb-5">
                     @if($info->hero_section_title)
-                        {!! (count($words = explode(' ', $info->hero_section_title)) > 3) ? implode(' ', array_slice($words, 0, 3)) . '<br><span class="text-theme">' . implode(' ', array_slice($words, 3)) . '</span> ' : $info->hero_section_title !!}
+                        {!! $info->hero_section_title !!}
                     @endif
                 </h1>
                 @if($info->hero_section_subtitle_text)
