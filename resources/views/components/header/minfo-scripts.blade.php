@@ -17,3 +17,4 @@
 @filamentStyles
 @vite(['resources/css/tailwind.css','resources/js/minfo-app.js'])
 @livewire('notifications')
+@livewireScripts
