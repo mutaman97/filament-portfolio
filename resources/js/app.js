@@ -57,3 +57,8 @@ acceptPrivacyEl.addEventListener('click', function() {
 function hideContent() {
         document.body.classList.add('hide-content');
     }
+
+
+import { Livewire } from '../../vendor/livewire/livewire/dist/livewire.esm'
+
+Livewire.start()
