@@ -17,7 +17,7 @@ class NavigationFactory extends Factory
     public function definition(): array
     {
         return [
-            'content' => '[{"url": "/", "name": "Homepage", "target": "_self", "is_active": true}, {"url": "/doc", "name": "Documentation", "target": "_self", "is_active": true}, {"url": "https://github.com/mutaman97", "name": "Github", "target": "_blank", "is_active": true}]',
+            'content' => '[{"url": "#contact", "name": "HIRE ME", "target": "_self", "is_active": true}, {"url": "/doc", "name": "Documentation", "target": "_self", "is_active": true}, {"url": "https://github.com/mutaman97", "name": "GITHUB", "target": "_blank", "is_active": true}]',
         ];
     }
 }

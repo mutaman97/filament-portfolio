@@ -19,19 +19,18 @@ class ProfileFactory extends Factory
         return [
             'localization' => 'Sharjah, United Arab Emirates',
             'job_position' => 'Full Stack Web Developer',
-            'dribbble' => 'www.dribbble.com/#',
-            'github' => 'www.github.com/#',
-            'linkedin' => 'www.linkedin.com/in/#',
-            'twitter' => 'www.twitter.com/#',
-            'facebook' => 'www.facebook.com/#',
-            'devto' => 'www.dev.to/#',
-            'instagram' => 'www.instagram.com/#',
-            'youtube' => 'www.youtube.com/#',
-            'medium' => 'www.medium.com/#',
-            'twitch' => 'www.twitch.com/#',
-            'skills' => 'PHP, Laravel, Filament, Tailwind, Livewire, Python',
-            'about' => '<p>Enthusiastic full-stack developer with a robust skill set encompassing front-end technologies such as HTML, CSS, and JavaScript, coupled with proficiency in back-end languages like Node.js and Python.</p><p>Experienced in designing and implementing database structures, API integrations, and responsive user interfaces.</p><br><p>Committed to writing clean, modular code, I bring a detail-oriented approach to development projects.</p><br><p>Versatile in utilizing frameworks like React and Express, I am equally adept at crafting scalable, efficient solutions on both ends of the tech stack.</p><br><p>With a keen eye for user experience and a passion for staying abreast of industry trends, I thrive in collaborative environments that encourage innovation. Ready to leverage my expertise to create impactful, high-performance applications and contribute to cutting-edge projects in a dynamic team setting.</p>
-'
+            'dribbble' => '',
+            'github' => 'www.github.com/mutaman97',
+            'linkedin' => 'www.linkedin.com/in/mutaman',
+            'twitter' => 'www.twitter.com/mutamanelhadi',
+            'facebook' => 'www.facebook.com/mutamanelhadi',
+            'devto' => 'www.dev.to/mutaman',
+            'instagram' => 'www.instagram.com/mutaman',
+            'youtube' => '',
+            'medium' => '',
+            'twitch' => '',
+            'skills' => 'PHP, Laravel, Filament, Vue Js, Tailwind, Livewire, Python',
+            'about' => '<p>Enthusiastic full-stack developer with a robust skill set encompassing front-end technologies such as HTML, CSS, and JavaScript, coupled with proficiency in back-end languages like PHP and Python.</p><p>Experienced in designing and implementing database structures, API integrations, and responsive user interfaces.</p><br><p>Committed to writing clean, modular code, I bring a detail-oriented approach to development projects.</p><br><p>Versatile in utilizing frameworks like Laravel, Vue and Nuxt, I am equally adept at crafting scalable, efficient solutions on both ends of the tech stack.</p><br><p>With a keen eye for user experience and a passion for staying abreast of industry trends, I thrive in collaborative environments that encourage innovation. Ready to leverage my expertise to create impactful, high-performance applications and contribute to cutting-edge projects in a dynamic team setting.</p>'
         ];
     }
 }

@@ -6,6 +6,7 @@ namespace Database\Seeders;
 
 use App\Models\Experience;
 use App\Models\Mail;
+use App\Models\Skill;
 use App\Models\User;
 use App\Models\Course;
 use App\Models\Setting;
@@ -28,8 +29,9 @@ class DatabaseSeeder extends Seeder
         $user = User::factory()
             ->hasProfile()
             ->create([
-                'name' => 'Warriorfolio',
-                'email' => 'warriorfolio@test.dev',
+                'name' => 'Mutaman',
+                'email' => 'mutamanelhadi97@gmail.com',
+                'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
             ]);
         $setting = Setting::factory()
             ->hasLayout()
@@ -39,8 +41,9 @@ class DatabaseSeeder extends Seeder
             ]);
         Mail::factory(20)->create();
         Newsletter::factory(10)->create();
-        Course::factory(5)->create();
-        Experience::factory(5)->create();
+        Course::factory(2)->create();
+        Skill::factory(5)->create();
+        Experience::factory(3)->create();
         Category::factory()->create();
         DB::table('pages')
             ->insert([

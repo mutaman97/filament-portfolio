@@ -19,10 +19,10 @@ class SettingFactory extends Factory
     {
         return [
             'name' => 'Mutaman Portfolio',
-            'meta_title' => 'Building the what\'s next with Laravel, Filament and Tailwind CSS',
+            'meta_title' => 'Mutaman | Web Developer | Portfolio',
             'meta_author' => 'Mutaman',
-            'meta_description' => 'Warriorfusion is a free and open-source web application for creating and managing your own website.',
-            'meta_keywords' => 'warriorfusion, warriorfusion 2, warriorfusion cms, warriorfusion cms 2, warriorfusion 2 cms',
+            'meta_description' => 'Hey, I&#039;m Mutaman, a full-stack web developer with a passion for software architecture and clean code. Over the last 4 years, I have developed and maintained complex Web apps using mainly Larave and Vue.',
+            'meta_keywords' => 'HTML, CSS, JavaScript, Laravel, Vue.js, Full-stack web development, Software architecture, Clean code, Web app development, Web app maintenance, PHP, Front-end development, Back-end development, Responsive design, RESTful APIs, Version control, Git, Node.js, SQL, MySQL, Web frameworks, Progressive Web Apps, Cross-browser compatibility, Agile methodologies, UX/UI design, MVC architecture, API integration, Code optimization'
         ];
     }
 

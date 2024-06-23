@@ -14,6 +14,7 @@ return new class extends Migration {
             $table->id();
             $table->string('logo');
             $table->string('name')->nullable();
+            $table->text('description');
             $table->string('url')->nullable();
             $table->integer('rate')->nullable();
             $table->timestamps();
