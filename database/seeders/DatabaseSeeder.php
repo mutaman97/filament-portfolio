@@ -6,6 +6,7 @@ namespace Database\Seeders;
 
 use App\Models\Experience;
 use App\Models\Mail;
+use App\Models\Project;
 use App\Models\Skill;
 use App\Models\User;
 use App\Models\Course;
@@ -42,7 +43,11 @@ class DatabaseSeeder extends Seeder
         Mail::factory(20)->create();
         Newsletter::factory(10)->create();
         Course::factory(2)->create();
-        Skill::factory(5)->create();
+        Skill::factory(6)->create();
+//        $this->call([
+//            SkillsTableSeeder::class
+//        ]);
+//        Project::factory(4)->create();
         Experience::factory(3)->create();
         Category::factory()->create();
         DB::table('pages')

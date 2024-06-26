@@ -1,19 +1,23 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\Seeders;
 
-use Awcodes\Curator\Models\Media;
-use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Awcodes\Curator\Models\Media;
 use Illuminate\Support\Facades\Storage;
+use Intervention\Image\Facades\Image;
 
-/**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Course>
- */
-class SkillFactory extends Factory
+class SkillsTableSeeder extends Seeder
 {
-
-    protected static array $skills = [
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $skills = [
             [
                 'name' => 'PHP',
                 'description' => 'Server-side scripting language for web development.',
@@ -58,56 +62,49 @@ class SkillFactory extends Factory
             ],
         ];
 
-    private static int $currentIndex = 0;
+        foreach ($skills as $skill) {
+            $fileName = pathinfo($skill['logo'], PATHINFO_BASENAME);
 
-    /**
-     * Define the model's default state.
-     *
-     * @return array<string, mixed>
-     */
-    public function definition(): array
-    {
-        $skill = self::$skills[self::$currentIndex];
-        $fileName = pathinfo($skill['logo'], PATHINFO_BASENAME);
+            $directory = config('curator.directory');
+            $disk = config('curator.disk');
 
-        $directory = config('curator.directory');
-        $disk = config('curator.disk');
+            if (! Storage::disk($disk)->exists($directory . '/' . $fileName)) {
+                $fileContents = file_get_contents(public_path($skill['logo']));
+                Storage::disk($disk)->put($directory . '/' . $fileName, $fileContents);
+            }
 
-        if (!Storage::disk($disk)->exists($directory . '/' . $fileName)) {
-            $fileContents = file_get_contents(public_path($skill['logo']));
-            Storage::disk($disk)->put($directory . '/' . $fileName, $fileContents);
-        }
+            $filePath = Storage::disk($disk)->path($directory . '/' . $fileName);
+            $fileExtension = pathinfo($filePath, PATHINFO_EXTENSION);
+            $fileSize = filesize($filePath);
 
-        $filePath = Storage::disk($disk)->path($directory . '/' . $fileName);
-        $fileExtension = pathinfo($filePath, PATHINFO_EXTENSION);
-        $fileSize = filesize($filePath);
+            // Upload the media and create a Media record
+            $media = Media::factory()->create([
+                'name' => pathinfo($fileName, PATHINFO_FILENAME),
+                'path' => $directory . '/' . $fileName,
+                'ext' => $fileExtension,
+                'type' => 'image/svg+xml',
+                'alt' => pathinfo($fileName, PATHINFO_FILENAME),
+                'title' => null,
+                'caption' => null,
+                'description' => null,
+                'width' => null,
+                'height' => null,
+                'disk' => $disk,
+                'directory' => $directory,
+                'size' => $fileSize ?? null,
+                'visibility' => 'public',
+            ]);
 
-        $media = Media::factory()->create([
-            'name' => pathinfo($fileName, PATHINFO_FILENAME),
-            'path' => $directory . '/' . $fileName,
-            'ext' => $fileExtension,
-            'type' => 'image/svg+xml',
-            'alt' => pathinfo($fileName, PATHINFO_FILENAME),
-            'title' => null,
-            'caption' => null,
-            'description' => null,
-            'width' => null,
-            'height' => null,
-            'disk' => $disk,
-            'directory' => $directory,
-            'size' => $fileSize ?? null,
-            'visibility' => 'public',
-        ]);
-
-        // Increment the index for the next run
-        self::$currentIndex = (self::$currentIndex + 1) % count(self::$skills);
-
-        return [
+            // Insert the skill with the media ID as the logo
+            DB::table('skills')->insert([
                 'name' => $skill['name'],
                 'description' => $skill['description'],
                 'logo' => $media,
                 'rate' => $skill['rate'],
                 'url' => $skill['url'],
-        ];
+                'created_at' => now(),
+                'updated_at' => now(),
+            ]);
+        }
     }
 }

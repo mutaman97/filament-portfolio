@@ -19,8 +19,7 @@
                 </h2>
                 @endif
                 <p class="mt-3.5 md:mt-5 subtitle max-w-sectionTitle">
-                    I design products that are more than pretty. I make them shippable and usable, ttempor
-                    non mollit dolor et do aute
+                    {{  __(' I\'m here to help! Whether you\'re looking to develop a new website, enhance your SEO strategy, or improve your UI/UX design, let\'s connect and discuss how we can achieve your goals together.') }}
                 </p>
             </div><!--./section-title-->
 

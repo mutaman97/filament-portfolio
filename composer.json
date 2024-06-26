@@ -30,7 +30,8 @@
         "pxlrbt/filament-excel": "^2.3",
         "spatie/laravel-activitylog": "^4.7",
         "z3d0x/filament-fabricator": "^2.0",
-        "z3d0x/filament-logger": "^0.6.2"
+        "z3d0x/filament-logger": "^0.6.2",
+      "ext-simplexml": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",

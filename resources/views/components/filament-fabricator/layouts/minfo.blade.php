@@ -133,7 +133,7 @@ null, 'portfolio_core' => null, 'clients_core' => null, 'contact_core' => null, 
                                 <i class="fal fa-tasks-alt"></i>
                             </span>
                                 <span class="group-[&.active]:text-theme dark:group-[&.active]:text-white group-hover:text-theme transition-colors">
-                                Poftfolio
+                                Portfolio
                             </span>
                             </a>
                         </li>
@@ -339,7 +339,7 @@ null, 'portfolio_core' => null, 'clients_core' => null, 'contact_core' => null, 
                         <x-about.minfo-section />
                     @endif
 
-{{--                    <x-filament-fabricator::page-blocks :blocks="$page->blocks" />--}}
+                    {{--<x-filament-fabricator::page-blocks :blocks="$page->blocks" />--}}
 
                     <!-- My Services Section Start -->
                     <div data-scroll-index="2" id="service"
@@ -357,8 +357,7 @@ null, 'portfolio_core' => null, 'clients_core' => null, 'contact_core' => null, 
                                     My <span class="font-semibold text-theme">Services</span>
                                 </h2>
                                 <p class="max-w-xl mt-4 md:mt-6 subtitle">
-                                    I design products that are more than pretty. I make them shippable and usable, tempor
-                                    non mollit dolor et do aute
+                                    {{ __('As a Full Stack Web Developer with expertise in Laravel, I offer a comprehensive range of services to help you build, optimize, and elevate your online presence.') }}
                                 </p>
                             </div>
 
@@ -378,10 +377,10 @@ null, 'portfolio_core' => null, 'clients_core' => null, 'contact_core' => null, 
                                         01
                                     </div>
                                     <h4 class="mt-5 mb-4 text-xl font-medium text-black dark:text-white xl:text-2xl">
-                                        UI/UX Design
+                                        {{  __('UI/UX Design') }}
                                     </h4>
                                     <p>
-                                        I design products that are more than pretty. I make them shippable.
+                                        {{  __('I focus on delivering visually appealing interfaces that provide seamless navigation and a delightful user experience.') }}
                                     </p>
                                 </div>
                                 <div
@@ -406,10 +405,10 @@ null, 'portfolio_core' => null, 'clients_core' => null, 'contact_core' => null, 
                                         02
                                     </div>
                                     <h4 class="mt-5 mb-4 text-xl font-medium text-black dark:text-white xl:text-2xl">
-                                        Web Development
+                                        {{  __('Web Development') }}
                                     </h4>
                                     <p>
-                                        I design products that are more than pretty. I make them shippable.
+                                        {{  __('Transform your ideas into a functional, responsive, and user-friendly website with my full-stack web development services.') }}
                                     </p>
                                 </div>
                                 <div
@@ -443,10 +442,10 @@ null, 'portfolio_core' => null, 'clients_core' => null, 'contact_core' => null, 
                                         03
                                     </div>
                                     <h4 class="mt-5 mb-4 text-xl font-medium text-black dark:text-white xl:text-2xl">
-                                        SEO / Marketing
+                                        {{  __('SEO (Search Engine Optimization)') }}
                                     </h4>
                                     <p>
-                                        I design products that are more than pretty. I make them shippable.
+                                        {{  __('I use the latest techniques and best practices to ensure your website ranks high on search engine results') }}
                                     </p>
                                 </div>
                                 <div
@@ -464,10 +463,10 @@ null, 'portfolio_core' => null, 'clients_core' => null, 'contact_core' => null, 
                                         04
                                     </div>
                                     <h4 class="mt-5 mb-4 text-xl font-medium text-black dark:text-white xl:text-2xl">
-                                        Branding & Strategy
+                                        {{  __('Maintenance and Support') }}
                                     </h4>
                                     <p>
-                                        I design products that are more than pretty. I make them shippable.
+                                        {{  __('Ensure your website remains up-to-date, secure, and fully functional with my maintenance and support services.') }}
                                     </p>
                                 </div>
                             </div>
@@ -496,357 +495,357 @@ null, 'portfolio_core' => null, 'clients_core' => null, 'contact_core' => null, 
                     </div>
                     <!-- My Resume Section End -->
 
-
+                    <!-- My Projects Section Start -->
                     @if($portfolio_core)
-                        <x-project.minfo-section />
+{{--                        <x-project.minfo-section />--}}
                     @endif
+                    <!-- My Projects Section End -->
 
                     <!-- Blog Section Start -->
                     <div data-scroll-index="6" id="blog"
                          class="py-5 xl:py-3.5 max-w-content xl:max-2xl:max-w-50rem max-xl:mx-auto xl:ml-auto">
 
-                        <div class="px-5 py-8 md:p-8 bg-white dark:bg-nightBlack rounded-2xl service-section lg:p-10 2xl:p-13">
-                            <div
-                                class="inline-flex items-center gap-2 px-4 py-2 text-xs tracking-wide text-black dark:text-white border lg:px-5 section-name border-platinum dark:border-greyBlack200 rounded-4xl">
-                                <i class="fal fa-blog text-theme"></i>
-                                BLOG
-                            </div>
-                            <div class="mt-5 mb-8 md:my-10 section-title">
-                                <h2
-                                    class="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
-                                    Latest <span class="font-semibold text-theme">Insights</span>
-                                </h2>
-                                <p class="max-w-xl mt-4 md:mt-6 subtitle">
-                                    I design products that are more than pretty. I make them shippable and usable, tempor
-                                    non mollit dolor et do aute
-                                </p>
-                            </div><!--./section-title-->
+{{--                        <div class="px-5 py-8 md:p-8 bg-white dark:bg-nightBlack rounded-2xl service-section lg:p-10 2xl:p-13">--}}
+{{--                            <div--}}
+{{--                                class="inline-flex items-center gap-2 px-4 py-2 text-xs tracking-wide text-black dark:text-white border lg:px-5 section-name border-platinum dark:border-greyBlack200 rounded-4xl">--}}
+{{--                                <i class="fal fa-blog text-theme"></i>--}}
+{{--                                BLOG--}}
+{{--                            </div>--}}
+{{--                            <div class="mt-5 mb-8 md:my-10 section-title">--}}
+{{--                                <h2--}}
+{{--                                    class="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">--}}
+{{--                                    Latest <span class="font-semibold text-theme">Insights</span>--}}
+{{--                                </h2>--}}
+{{--                                <p class="max-w-xl mt-4 md:mt-6 subtitle">--}}
+{{--                                    I design products that are more than pretty. I make them shippable and usable, tempor--}}
+{{--                                    non mollit dolor et do aute--}}
+{{--                                </p>--}}
+{{--                            </div><!--./section-title-->--}}
 
-                            <div class="blog-list md:space-y-7.5 space-y-5">
+{{--                            <div class="blog-list md:space-y-7.5 space-y-5">--}}
 
-                                <div
-                                    class="grid md:gap-2 grid-cols-12 overflow-hidden article group bg-flashWhite dark:bg-metalBlack items-center rounded-2xl p-3.5">
-                                    <div class="flex col-span-12 overflow-hidden thumbnail sm:col-span-6 md:col-span-5">
-                                        <a href="article-details.html" class="block w-full overflow-hidden rounded-xl">
-                                            <img src="assets/img/blog/article1.png"
-                                                 class="object-cover object-center w-full h-full min-h-[288px] transition-all duration-300 ease-in-out max-h-60 md:min-h-60 group-hover:scale-105"
-                                                 alt="Post Title">
-                                        </a>
-                                    </div>
-                                    <div
-                                        class="relative flex flex-col col-span-12 px-3 pt-6 pb-2 md:p-5 post-content sm:col-span-6 md:col-span-7">
-                                        <div class="flex items-center gap-5">
-                                            <div class="text-sm font-medium tags">
-                                                <a href="#" class="transition-colors hover:text-theme">
-                                                    UI Design
-                                                </a>,
-                                                <span class="post_date">
-                                                03 May 2023
-                                            </span>
-                                            </div>
-                                        </div>
-                                        <div class="post-title mt-3 md:mt-4.5 mb-6 md:mb-8">
-                                            <a href="article-details.html"
-                                               class="text-xl font-semibold leading-normal text-black dark:text-white transition-colors line-clamp-2 2xl:text-2xl 2xl:leading-normal hover:text-theme">
-                                                Elevate your mornings with perfectly brewed coffee
-                                            </a>
-                                        </div>
-                                        <div class="read-details">
-                                            <a href="article-details.html"
-                                               class="inline-flex items-center gap-2 border border-theme text-theme text-sm py-3.5 px-6 rounded-3xl leading-none transition-all duration-300 hover:bg-themeHover hover:border-themeHover dark:font-medium hover:text-white">
-                                                Read More
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="grid md:gap-2 grid-cols-12 overflow-hidden article group bg-flashWhite dark:bg-metalBlack items-center rounded-2xl p-3.5">
-                                    <div class="flex col-span-12 overflow-hidden thumbnail sm:col-span-6 md:col-span-5">
-                                        <a href="article-details.html" class="block w-full overflow-hidden rounded-xl">
-                                            <img src="assets/img/blog/article2.png"
-                                                 class="object-cover object-center w-full h-full min-h-[288px] transition-all duration-300 ease-in-out max-h-60 md:min-h-60 group-hover:scale-105"
-                                                 alt="Post Title">
-                                        </a>
-                                    </div>
-                                    <div
-                                        class="relative flex flex-col col-span-12 px-3 pt-6 pb-2 md:p-5 post-content sm:col-span-6 md:col-span-7">
-                                        <div class="flex items-center gap-5">
-                                            <div class="text-sm font-medium tags">
-                                                <a href="#" class="transition-colors hover:text-theme">
-                                                    UI Design
-                                                </a>,
-                                                <span class="post_date">
-                                                03 May 2023
-                                            </span>
-                                            </div>
-                                        </div>
-                                        <div class="post-title mt-3 md:mt-4.5 mb-6 md:mb-8">
-                                            <a href="article-details.html"
-                                               class="text-xl font-semibold leading-normal text-black dark:text-white transition-colors line-clamp-2 2xl:text-2xl 2xl:leading-normal hover:text-theme">
-                                                Mastering the clock: A guide to time management
-                                            </a>
-                                        </div>
-                                        <div class="read-details">
-                                            <a href="article-details.html"
-                                               class="inline-flex items-center gap-2 border border-theme text-theme text-sm py-3.5 px-6 rounded-3xl leading-none transition-all duration-300 hover:bg-themeHover hover:border-themeHover dark:font-medium hover:text-white">
-                                                Read More
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="grid md:gap-2 grid-cols-12 overflow-hidden article group bg-flashWhite dark:bg-metalBlack items-center rounded-2xl p-3.5">
-                                    <div class="flex col-span-12 overflow-hidden thumbnail sm:col-span-6 md:col-span-5">
-                                        <a href="article-details.html" class="block w-full overflow-hidden rounded-xl">
-                                            <img src="assets/img/blog/article3.png"
-                                                 class="object-cover object-center w-full h-full min-h-[288px] transition-all duration-300 ease-in-out max-h-60 md:min-h-60 group-hover:scale-105"
-                                                 alt="Post Title">
-                                        </a>
-                                    </div>
-                                    <div
-                                        class="relative flex flex-col col-span-12 px-3 pt-6 pb-2 md:p-5 post-content sm:col-span-6 md:col-span-7">
-                                        <div class="flex items-center gap-5">
-                                            <div class="text-sm font-medium tags">
-                                                <a href="#" class="transition-colors hover:text-theme">
-                                                    UI Design
-                                                </a>,
-                                                <span class="post_date">
-                                                03 May 2023
-                                            </span>
-                                            </div>
-                                        </div>
-                                        <div class="post-title mt-3 md:mt-4.5 mb-6 md:mb-8">
-                                            <a href="article-details.html"
-                                               class="text-xl font-semibold leading-normal text-black dark:text-white transition-colors line-clamp-2 2xl:text-2xl 2xl:leading-normal hover:text-theme">
-                                                Homeward bound: Crafting a productive home pffice
-                                            </a>
-                                        </div>
-                                        <div class="read-details">
-                                            <a href="article-details.html"
-                                               class="inline-flex items-center gap-2 border border-theme text-theme text-sm py-3.5 px-6 rounded-3xl leading-none transition-all duration-300 hover:bg-themeHover hover:border-themeHover dark:font-medium hover:text-white">
-                                                Read More
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+{{--                                <div--}}
+{{--                                    class="grid md:gap-2 grid-cols-12 overflow-hidden article group bg-flashWhite dark:bg-metalBlack items-center rounded-2xl p-3.5">--}}
+{{--                                    <div class="flex col-span-12 overflow-hidden thumbnail sm:col-span-6 md:col-span-5">--}}
+{{--                                        <a href="article-details.html" class="block w-full overflow-hidden rounded-xl">--}}
+{{--                                            <img src="assets/img/blog/article1.png"--}}
+{{--                                                 class="object-cover object-center w-full h-full min-h-[288px] transition-all duration-300 ease-in-out max-h-60 md:min-h-60 group-hover:scale-105"--}}
+{{--                                                 alt="Post Title">--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
+{{--                                    <div--}}
+{{--                                        class="relative flex flex-col col-span-12 px-3 pt-6 pb-2 md:p-5 post-content sm:col-span-6 md:col-span-7">--}}
+{{--                                        <div class="flex items-center gap-5">--}}
+{{--                                            <div class="text-sm font-medium tags">--}}
+{{--                                                <a href="#" class="transition-colors hover:text-theme">--}}
+{{--                                                    UI Design--}}
+{{--                                                </a>,--}}
+{{--                                                <span class="post_date">--}}
+{{--                                                03 May 2023--}}
+{{--                                            </span>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="post-title mt-3 md:mt-4.5 mb-6 md:mb-8">--}}
+{{--                                            <a href="article-details.html"--}}
+{{--                                               class="text-xl font-semibold leading-normal text-black dark:text-white transition-colors line-clamp-2 2xl:text-2xl 2xl:leading-normal hover:text-theme">--}}
+{{--                                                Elevate your mornings with perfectly brewed coffee--}}
+{{--                                            </a>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="read-details">--}}
+{{--                                            <a href="article-details.html"--}}
+{{--                                               class="inline-flex items-center gap-2 border border-theme text-theme text-sm py-3.5 px-6 rounded-3xl leading-none transition-all duration-300 hover:bg-themeHover hover:border-themeHover dark:font-medium hover:text-white">--}}
+{{--                                                Read More--}}
+{{--                                            </a>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div--}}
+{{--                                    class="grid md:gap-2 grid-cols-12 overflow-hidden article group bg-flashWhite dark:bg-metalBlack items-center rounded-2xl p-3.5">--}}
+{{--                                    <div class="flex col-span-12 overflow-hidden thumbnail sm:col-span-6 md:col-span-5">--}}
+{{--                                        <a href="article-details.html" class="block w-full overflow-hidden rounded-xl">--}}
+{{--                                            <img src="assets/img/blog/article2.png"--}}
+{{--                                                 class="object-cover object-center w-full h-full min-h-[288px] transition-all duration-300 ease-in-out max-h-60 md:min-h-60 group-hover:scale-105"--}}
+{{--                                                 alt="Post Title">--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
+{{--                                    <div--}}
+{{--                                        class="relative flex flex-col col-span-12 px-3 pt-6 pb-2 md:p-5 post-content sm:col-span-6 md:col-span-7">--}}
+{{--                                        <div class="flex items-center gap-5">--}}
+{{--                                            <div class="text-sm font-medium tags">--}}
+{{--                                                <a href="#" class="transition-colors hover:text-theme">--}}
+{{--                                                    UI Design--}}
+{{--                                                </a>,--}}
+{{--                                                <span class="post_date">--}}
+{{--                                                03 May 2023--}}
+{{--                                            </span>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="post-title mt-3 md:mt-4.5 mb-6 md:mb-8">--}}
+{{--                                            <a href="article-details.html"--}}
+{{--                                               class="text-xl font-semibold leading-normal text-black dark:text-white transition-colors line-clamp-2 2xl:text-2xl 2xl:leading-normal hover:text-theme">--}}
+{{--                                                Mastering the clock: A guide to time management--}}
+{{--                                            </a>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="read-details">--}}
+{{--                                            <a href="article-details.html"--}}
+{{--                                               class="inline-flex items-center gap-2 border border-theme text-theme text-sm py-3.5 px-6 rounded-3xl leading-none transition-all duration-300 hover:bg-themeHover hover:border-themeHover dark:font-medium hover:text-white">--}}
+{{--                                                Read More--}}
+{{--                                            </a>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div--}}
+{{--                                    class="grid md:gap-2 grid-cols-12 overflow-hidden article group bg-flashWhite dark:bg-metalBlack items-center rounded-2xl p-3.5">--}}
+{{--                                    <div class="flex col-span-12 overflow-hidden thumbnail sm:col-span-6 md:col-span-5">--}}
+{{--                                        <a href="article-details.html" class="block w-full overflow-hidden rounded-xl">--}}
+{{--                                            <img src="assets/img/blog/article3.png"--}}
+{{--                                                 class="object-cover object-center w-full h-full min-h-[288px] transition-all duration-300 ease-in-out max-h-60 md:min-h-60 group-hover:scale-105"--}}
+{{--                                                 alt="Post Title">--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
+{{--                                    <div--}}
+{{--                                        class="relative flex flex-col col-span-12 px-3 pt-6 pb-2 md:p-5 post-content sm:col-span-6 md:col-span-7">--}}
+{{--                                        <div class="flex items-center gap-5">--}}
+{{--                                            <div class="text-sm font-medium tags">--}}
+{{--                                                <a href="#" class="transition-colors hover:text-theme">--}}
+{{--                                                    UI Design--}}
+{{--                                                </a>,--}}
+{{--                                                <span class="post_date">--}}
+{{--                                                03 May 2023--}}
+{{--                                            </span>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="post-title mt-3 md:mt-4.5 mb-6 md:mb-8">--}}
+{{--                                            <a href="article-details.html"--}}
+{{--                                               class="text-xl font-semibold leading-normal text-black dark:text-white transition-colors line-clamp-2 2xl:text-2xl 2xl:leading-normal hover:text-theme">--}}
+{{--                                                Homeward bound: Crafting a productive home pffice--}}
+{{--                                            </a>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="read-details">--}}
+{{--                                            <a href="article-details.html"--}}
+{{--                                               class="inline-flex items-center gap-2 border border-theme text-theme text-sm py-3.5 px-6 rounded-3xl leading-none transition-all duration-300 hover:bg-themeHover hover:border-themeHover dark:font-medium hover:text-white">--}}
+{{--                                                Read More--}}
+{{--                                            </a>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
 
-                            </div>
+{{--                            </div>--}}
 
-                            <div class="mt-10 text-center more-blogs md:mt-13">
-                                <a href="#"
-                                   class="inline-flex items-center gap-2 text-[15px] font-medium border border-theme bg-theme text-white py-4.5 px-9 rounded-4xl leading-none transition-all duration-300 hover:bg-themeHover hover:border-themeHover">
-                                    More Post
-                                </a>
-                            </div>
-                        </div>
+{{--                            <div class="mt-10 text-center more-blogs md:mt-13">--}}
+{{--                                <a href="#"--}}
+{{--                                   class="inline-flex items-center gap-2 text-[15px] font-medium border border-theme bg-theme text-white py-4.5 px-9 rounded-4xl leading-none transition-all duration-300 hover:bg-themeHover hover:border-themeHover">--}}
+{{--                                    More Post--}}
+{{--                                </a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                     </div>
                     <!-- Blog Section End -->
-
 
                     <!-- Testimonial Section Start -->
                     <div data-scroll-index="7" id="testimonial"
                          class="py-5 xl:py-3.5 max-w-content xl:max-2xl:max-w-50rem max-xl:mx-auto xl:ml-auto">
 
-                        <div class="px-5 py-8 md:p-8 bg-white dark:bg-nightBlack rounded-2xl service-section lg:p-10 2xl:p-13">
-                            <div
-                                class="inline-flex items-center gap-2 px-4 py-2 text-xs tracking-wide text-black dark:text-white border lg:px-5 section-name border-platinum dark:border-greyBlack200 rounded-4xl">
-                                <i class="fal fa-comment-alt-check text-theme"></i>
-                                TESTIMONIAL
-                            </div>
-                            <div class="mt-5 mb-8 md:my-10 section-title">
-                                <h2
-                                    class="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
-                                    What <span class="font-semibold text-theme">People Say</span>
-                                </h2>
-                                <p class="max-w-xl mt-4 md:mt-6 subtitle">
-                                    I design products that are more than pretty. I make them shippable and usable, tempor
-                                    non mollit dolor et do aute
-                                </p>
-                            </div><!--./section-title-->
+{{--                        <div class="px-5 py-8 md:p-8 bg-white dark:bg-nightBlack rounded-2xl service-section lg:p-10 2xl:p-13">--}}
+{{--                            <div--}}
+{{--                                class="inline-flex items-center gap-2 px-4 py-2 text-xs tracking-wide text-black dark:text-white border lg:px-5 section-name border-platinum dark:border-greyBlack200 rounded-4xl">--}}
+{{--                                <i class="fal fa-comment-alt-check text-theme"></i>--}}
+{{--                                TESTIMONIAL--}}
+{{--                            </div>--}}
+{{--                            <div class="mt-5 mb-8 md:my-10 section-title">--}}
+{{--                                <h2--}}
+{{--                                    class="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">--}}
+{{--                                    What <span class="font-semibold text-theme">People Say</span>--}}
+{{--                                </h2>--}}
+{{--                                <p class="max-w-xl mt-4 md:mt-6 subtitle">--}}
+{{--                                    I design products that are more than pretty. I make them shippable and usable, tempor--}}
+{{--                                    non mollit dolor et do aute--}}
+{{--                                </p>--}}
+{{--                            </div><!--./section-title-->--}}
 
-                            <div class="mt-12 testimonial-slider">
-                                <div class="swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="text-center slider-inner md:px-5">
-                                                <div class="image flex-center">
-                                                    <img src="assets/img/testimonial/author1.png" alt="">
-                                                </div>
-                                                <div class="mt-6 mb-3 text-center rating text-lightOrange">
-                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"
-                                                            fill="#FFB657" />
-                                                    </svg>
-                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"
-                                                            fill="#FFB657" />
-                                                    </svg>
-                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"
-                                                            fill="#FFB657" />
-                                                    </svg>
-                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"
-                                                            fill="#FFB657" />
-                                                    </svg>
-                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"
-                                                            fill="#FFB657" />
-                                                    </svg>
-                                                </div>
-                                                <div class="text-sm md:text-[15px] leading-loose content">
-                                                    Working with <span class="font-semibold text-theme">Reddick</span> is a
-                                                    game-changer.
-                                                    Their coding expertise and commitment to quality make every project a
-                                                    success.
-                                                </div>
-                                                <div class="mt-5 text-center author">
-                                                    <h6 class="text-lg font-medium text-black dark:text-white">Alex Johnson</h6>
-                                                    <p class="text-sm">Developer</p>
-                                                </div>
-                                            </div>
-                                        </div><!--./testimonial-card-->
+{{--                            <div class="mt-12 testimonial-slider">--}}
+{{--                                <div class="swiper">--}}
+{{--                                    <div class="swiper-wrapper">--}}
+{{--                                        <div class="swiper-slide">--}}
+{{--                                            <div class="text-center slider-inner md:px-5">--}}
+{{--                                                <div class="image flex-center">--}}
+{{--                                                    <img src="assets/img/testimonial/author1.png" alt="">--}}
+{{--                                                </div>--}}
+{{--                                                <div class="mt-6 mb-3 text-center rating text-lightOrange">--}}
+{{--                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"--}}
+{{--                                                         xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                        <path--}}
+{{--                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"--}}
+{{--                                                            fill="#FFB657" />--}}
+{{--                                                    </svg>--}}
+{{--                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"--}}
+{{--                                                         xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                        <path--}}
+{{--                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"--}}
+{{--                                                            fill="#FFB657" />--}}
+{{--                                                    </svg>--}}
+{{--                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"--}}
+{{--                                                         xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                        <path--}}
+{{--                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"--}}
+{{--                                                            fill="#FFB657" />--}}
+{{--                                                    </svg>--}}
+{{--                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"--}}
+{{--                                                         xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                        <path--}}
+{{--                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"--}}
+{{--                                                            fill="#FFB657" />--}}
+{{--                                                    </svg>--}}
+{{--                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"--}}
+{{--                                                         xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                        <path--}}
+{{--                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"--}}
+{{--                                                            fill="#FFB657" />--}}
+{{--                                                    </svg>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="text-sm md:text-[15px] leading-loose content">--}}
+{{--                                                    Working with <span class="font-semibold text-theme">Reddick</span> is a--}}
+{{--                                                    game-changer.--}}
+{{--                                                    Their coding expertise and commitment to quality make every project a--}}
+{{--                                                    success.--}}
+{{--                                                </div>--}}
+{{--                                                <div class="mt-5 text-center author">--}}
+{{--                                                    <h6 class="text-lg font-medium text-black dark:text-white">Alex Johnson</h6>--}}
+{{--                                                    <p class="text-sm">Developer</p>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </div><!--./testimonial-card-->--}}
 
-                                        <div class="swiper-slide">
-                                            <div class="text-center slider-inner md:px-5">
-                                                <div class="image flex-center">
-                                                    <img src="assets/img/testimonial/author2.png" alt="">
-                                                </div>
-                                                <div class="mt-6 mb-3 text-center rating text-lightOrange">
-                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"
-                                                            fill="#FFB657" />
-                                                    </svg>
-                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"
-                                                            fill="#FFB657" />
-                                                    </svg>
-                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"
-                                                            fill="#FFB657" />
-                                                    </svg>
-                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"
-                                                            fill="#FFB657" />
-                                                    </svg>
-                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"
-                                                            fill="#FFB657" />
-                                                    </svg>
-                                                </div>
-                                                <div class="text-sm md:text-[15px] leading-loose content">
-                                                    <span class="font-semibold text-theme">Reddick</span> exceeds
-                                                    expectations with
-                                                    top-tier coding skills. Reliable, collaborative, and a true asset to any
-                                                    project. Highly recommended
-                                                </div>
-                                                <div class="mt-5 text-center author">
-                                                    <h6 class="text-lg font-medium text-black dark:text-white">Mily Martin</h6>
-                                                    <p class="text-sm">CEO-itTheme</p>
-                                                </div>
-                                            </div>
-                                        </div><!--./testimonial-card-->
+{{--                                        <div class="swiper-slide">--}}
+{{--                                            <div class="text-center slider-inner md:px-5">--}}
+{{--                                                <div class="image flex-center">--}}
+{{--                                                    <img src="assets/img/testimonial/author2.png" alt="">--}}
+{{--                                                </div>--}}
+{{--                                                <div class="mt-6 mb-3 text-center rating text-lightOrange">--}}
+{{--                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"--}}
+{{--                                                         xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                        <path--}}
+{{--                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"--}}
+{{--                                                            fill="#FFB657" />--}}
+{{--                                                    </svg>--}}
+{{--                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"--}}
+{{--                                                         xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                        <path--}}
+{{--                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"--}}
+{{--                                                            fill="#FFB657" />--}}
+{{--                                                    </svg>--}}
+{{--                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"--}}
+{{--                                                         xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                        <path--}}
+{{--                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"--}}
+{{--                                                            fill="#FFB657" />--}}
+{{--                                                    </svg>--}}
+{{--                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"--}}
+{{--                                                         xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                        <path--}}
+{{--                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"--}}
+{{--                                                            fill="#FFB657" />--}}
+{{--                                                    </svg>--}}
+{{--                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"--}}
+{{--                                                         xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                        <path--}}
+{{--                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"--}}
+{{--                                                            fill="#FFB657" />--}}
+{{--                                                    </svg>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="text-sm md:text-[15px] leading-loose content">--}}
+{{--                                                    <span class="font-semibold text-theme">Reddick</span> exceeds--}}
+{{--                                                    expectations with--}}
+{{--                                                    top-tier coding skills. Reliable, collaborative, and a true asset to any--}}
+{{--                                                    project. Highly recommended--}}
+{{--                                                </div>--}}
+{{--                                                <div class="mt-5 text-center author">--}}
+{{--                                                    <h6 class="text-lg font-medium text-black dark:text-white">Mily Martin</h6>--}}
+{{--                                                    <p class="text-sm">CEO-itTheme</p>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </div><!--./testimonial-card-->--}}
 
-                                        <div class="swiper-slide">
-                                            <div class="text-center slider-inner md:px-5">
-                                                <div class="image flex-center">
-                                                    <img src="assets/img/testimonial/author2.png" alt="">
-                                                </div>
-                                                <div class="mt-6 mb-3 text-center rating text-lightOrange">
-                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"
-                                                            fill="#FFB657" />
-                                                    </svg>
-                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"
-                                                            fill="#FFB657" />
-                                                    </svg>
-                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"
-                                                            fill="#FFB657" />
-                                                    </svg>
-                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"
-                                                            fill="#FFB657" />
-                                                    </svg>
-                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"
-                                                            fill="#FFB657" />
-                                                    </svg>
-                                                </div>
-                                                <div class="text-sm md:text-[15px] leading-loose content">
-                                                    <span class="font-semibold text-theme">Reddick</span> delivers
-                                                    excellence in every
-                                                    line of code. Dependable, innovative, and a key player in project
-                                                    success. Outstanding performance.
-                                                </div>
-                                                <div class="mt-5 text-center author">
-                                                    <h6 class="text-lg font-medium text-black dark:text-white">Alex Johnson</h6>
-                                                    <p class="text-sm">Developer</p>
-                                                </div>
-                                            </div>
-                                        </div><!--./testimonial-card-->
-                                    </div>
+{{--                                        <div class="swiper-slide">--}}
+{{--                                            <div class="text-center slider-inner md:px-5">--}}
+{{--                                                <div class="image flex-center">--}}
+{{--                                                    <img src="assets/img/testimonial/author2.png" alt="">--}}
+{{--                                                </div>--}}
+{{--                                                <div class="mt-6 mb-3 text-center rating text-lightOrange">--}}
+{{--                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"--}}
+{{--                                                         xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                        <path--}}
+{{--                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"--}}
+{{--                                                            fill="#FFB657" />--}}
+{{--                                                    </svg>--}}
+{{--                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"--}}
+{{--                                                         xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                        <path--}}
+{{--                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"--}}
+{{--                                                            fill="#FFB657" />--}}
+{{--                                                    </svg>--}}
+{{--                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"--}}
+{{--                                                         xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                        <path--}}
+{{--                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"--}}
+{{--                                                            fill="#FFB657" />--}}
+{{--                                                    </svg>--}}
+{{--                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"--}}
+{{--                                                         xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                        <path--}}
+{{--                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"--}}
+{{--                                                            fill="#FFB657" />--}}
+{{--                                                    </svg>--}}
+{{--                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"--}}
+{{--                                                         xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                        <path--}}
+{{--                                                            d="M14.4391 5.35656L10.1019 4.65667C10.0073 4.64115 9.92204 4.58373 9.87552 4.49217L7.86898 0.579903C7.69686 0.241595 7.21151 0.241595 7.03784 0.579903L5.0313 4.49217C4.98788 4.57753 4.9057 4.64115 4.80491 4.65667L0.467749 5.35656C0.0878407 5.41864 -0.0563694 5.87799 0.211892 6.14802L3.31008 9.26728C3.37521 9.33556 3.41088 9.43178 3.39537 9.53265L2.72239 13.8763C2.66346 14.2581 3.05113 14.539 3.39382 14.3667L7.31385 12.3819C7.39914 12.3384 7.50148 12.3353 7.59297 12.3819L11.513 14.3667C11.8572 14.5405 12.2434 14.2566 12.186 13.8763L11.5146 9.54662C11.4944 9.44885 11.5223 9.34332 11.5983 9.26728L14.6949 6.14802C14.9632 5.87799 14.8159 5.41709 14.4391 5.35656Z"--}}
+{{--                                                            fill="#FFB657" />--}}
+{{--                                                    </svg>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="text-sm md:text-[15px] leading-loose content">--}}
+{{--                                                    <span class="font-semibold text-theme">Reddick</span> delivers--}}
+{{--                                                    excellence in every--}}
+{{--                                                    line of code. Dependable, innovative, and a key player in project--}}
+{{--                                                    success. Outstanding performance.--}}
+{{--                                                </div>--}}
+{{--                                                <div class="mt-5 text-center author">--}}
+{{--                                                    <h6 class="text-lg font-medium text-black dark:text-white">Alex Johnson</h6>--}}
+{{--                                                    <p class="text-sm">Developer</p>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </div><!--./testimonial-card-->--}}
+{{--                                    </div>--}}
 
-                                    <!-- Slider Controls Start -->
-                                    <div
-                                        class="testimonial-slider-navigation flex justify-center items-center gap-2.5 mt-10 lg:mt-12">
-                                        <button
-                                            class="transition border rounded-full button-prev w-11 h-11 group border-platinum dark:border-greyBlack flex-center hover:bg-theme hover:border-theme"
-                                            aria-label="Previous">
-                                            <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                      d="M18 5.08006C18 4.77812 17.7121 4.5334 17.3571 4.5334L2.19486 4.5334L6.07553 0.933214C6.32659 0.719715 6.32659 0.373628 6.07553 0.160126C5.82448 -0.0533767 5.41745 -0.0533766 5.1664 0.160126L0.188289 4.69352C-0.0627618 4.90702 -0.0627618 5.2531 0.188289 5.4666L5.33115 9.83986C5.5822 10.0534 5.98923 10.0534 6.24028 9.83986C6.49134 9.62637 6.49134 9.28028 6.24028 9.06678L2.19486 5.62672L17.3571 5.62671C17.7121 5.62671 18 5.38199 18 5.08006Z"
-                                                      class="fill-[#A0A0A0] group-hover:fill-white" />
-                                            </svg>
-                                        </button>
-                                        <div class="text-sm font-light text-center text-black dark:text-white counter w-7"></div>
-                                        <button
-                                            class="transition border rounded-full button-next w-11 h-11 group border-platinum dark:border-greyBlack flex-center hover:bg-theme hover:border-theme"
-                                            aria-label="Next">
-                                            <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                      d="M4.44113e-07 4.91994C4.17717e-07 5.22187 0.287871 5.4666 0.642857 5.4666L15.8051 5.4666L11.9245 9.06678C11.6734 9.28028 11.6734 9.62637 11.9245 9.83987C12.1755 10.0534 12.5826 10.0534 12.8336 9.83987L17.8117 5.30648C18.0628 5.09298 18.0628 4.7469 17.8117 4.5334L12.6688 0.160134C12.4178 -0.0533766 12.0108 -0.0533766 11.7597 0.160134C11.5087 0.373633 11.5087 0.719718 11.7597 0.933218L15.8051 4.37328L0.642857 4.37328C0.287872 4.37328 4.70509e-07 4.61801 4.44113e-07 4.91994Z"
-                                                      class="fill-[#A0A0A0] group-hover:fill-white" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                    <!-- Slider Controls End -->
-                                </div>
-                            </div><!--./testimonial-slider-->
-                        </div>
+{{--                                    <!-- Slider Controls Start -->--}}
+{{--                                    <div--}}
+{{--                                        class="testimonial-slider-navigation flex justify-center items-center gap-2.5 mt-10 lg:mt-12">--}}
+{{--                                        <button--}}
+{{--                                            class="transition border rounded-full button-prev w-11 h-11 group border-platinum dark:border-greyBlack flex-center hover:bg-theme hover:border-theme"--}}
+{{--                                            aria-label="Previous">--}}
+{{--                                            <svg width="18" height="10" viewBox="0 0 18 10" fill="none"--}}
+{{--                                                 xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                <path fill-rule="evenodd" clip-rule="evenodd"--}}
+{{--                                                      d="M18 5.08006C18 4.77812 17.7121 4.5334 17.3571 4.5334L2.19486 4.5334L6.07553 0.933214C6.32659 0.719715 6.32659 0.373628 6.07553 0.160126C5.82448 -0.0533767 5.41745 -0.0533766 5.1664 0.160126L0.188289 4.69352C-0.0627618 4.90702 -0.0627618 5.2531 0.188289 5.4666L5.33115 9.83986C5.5822 10.0534 5.98923 10.0534 6.24028 9.83986C6.49134 9.62637 6.49134 9.28028 6.24028 9.06678L2.19486 5.62672L17.3571 5.62671C17.7121 5.62671 18 5.38199 18 5.08006Z"--}}
+{{--                                                      class="fill-[#A0A0A0] group-hover:fill-white" />--}}
+{{--                                            </svg>--}}
+{{--                                        </button>--}}
+{{--                                        <div class="text-sm font-light text-center text-black dark:text-white counter w-7"></div>--}}
+{{--                                        <button--}}
+{{--                                            class="transition border rounded-full button-next w-11 h-11 group border-platinum dark:border-greyBlack flex-center hover:bg-theme hover:border-theme"--}}
+{{--                                            aria-label="Next">--}}
+{{--                                            <svg width="18" height="10" viewBox="0 0 18 10" fill="none"--}}
+{{--                                                 xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                <path fill-rule="evenodd" clip-rule="evenodd"--}}
+{{--                                                      d="M4.44113e-07 4.91994C4.17717e-07 5.22187 0.287871 5.4666 0.642857 5.4666L15.8051 5.4666L11.9245 9.06678C11.6734 9.28028 11.6734 9.62637 11.9245 9.83987C12.1755 10.0534 12.5826 10.0534 12.8336 9.83987L17.8117 5.30648C18.0628 5.09298 18.0628 4.7469 17.8117 4.5334L12.6688 0.160134C12.4178 -0.0533766 12.0108 -0.0533766 11.7597 0.160134C11.5087 0.373633 11.5087 0.719718 11.7597 0.933218L15.8051 4.37328L0.642857 4.37328C0.287872 4.37328 4.70509e-07 4.61801 4.44113e-07 4.91994Z"--}}
+{{--                                                      class="fill-[#A0A0A0] group-hover:fill-white" />--}}
+{{--                                            </svg>--}}
+{{--                                        </button>--}}
+{{--                                    </div>--}}
+{{--                                    <!-- Slider Controls End -->--}}
+{{--                                </div>--}}
+{{--                            </div><!--./testimonial-slider-->--}}
+{{--                        </div>--}}
                     </div>
                     <!-- Testimonial Section End -->
 

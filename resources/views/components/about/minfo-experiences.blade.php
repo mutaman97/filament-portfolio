@@ -4,11 +4,10 @@
     <div class="mb-8 mt-7 md:my-10 section-title">
         <h2
             class="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
-            Work <span class="font-semibold text-theme">Experience</span>
+            {{  __('Work') }}<span class="font-semibold text-theme">{{  __('Experience') }}</span>
         </h2>
         <p class="max-w-xl mt-4 md:mt-6 subtitle">
-            I design products that are more than pretty. I make them shippable and usable, tempor
-            non mollit dolor et do aute
+            {{  __('In this section, I showcase my professional journey, highlighting key roles and responsibilities that have shaped my career.') }}
         </p>
     </div><!--./section-title-->
     <div class="experience">

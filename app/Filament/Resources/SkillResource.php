@@ -73,7 +73,7 @@ class SkillResource extends Resource
     {
         return $table
             ->columns([
-                Stack::make([
+//                Stack::make([
                     CuratorColumn::make('logo')
                         ->label('Skill Logo')
                         ->size(90),
@@ -85,11 +85,12 @@ class SkillResource extends Resource
                     Tables\Columns\TextColumn::make('url')
                         ->searchable()
                         ->sortable(),
-                ])
-            ])->contentGrid([
-                'md' => 3,
-                'xl' => 5,
+//                ])
             ])
+//            ->contentGrid([
+//                'md' => 3,
+//                'xl' => 5,
+//            ])
             ->filters([
                 //
             ])

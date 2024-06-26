@@ -19,7 +19,7 @@ class LayoutFactory extends Factory
         return [
             /** Hero Section */
             'hero_section_title' => 'I Craft The<br><span class="text-theme">Digital Landscape</span>',
-            'hero_section_subtitle_text' => 'I am a <span class="font-medium text-black dark:text-white/90">Frontend Developer</span> at heart and, i create features that are best suited for the job',
+            'hero_section_subtitle_text' => 'I am a <span class="font-medium text-black dark:text-white/90">Back-end Developer</span> at heart and, i create features that are best suited for the job',
             'hero_section_button_text' => 'HIRE ME',
             'hero_section_button_url' => '#contact',
             'hero_button_link_target' => '_self',
