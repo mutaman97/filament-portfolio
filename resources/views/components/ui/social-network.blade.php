@@ -1,4 +1,4 @@
-<div>
+<div class="items-center flex justify-center">
     @if($social->twitter)
     <x-ui.icon :href="$social->twitter" name="logo-twitter" />
     @endif

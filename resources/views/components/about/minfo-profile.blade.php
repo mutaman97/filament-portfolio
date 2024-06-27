@@ -23,9 +23,9 @@
             <h6 class="mb-1 text-lg font-semibold text-black dark:text-white name">{{ $profile->user->name }}</h6>
             <div class="leading-none cd-headline clip is-full-width">
                 <h6 class="text-sm cd-words-wrapper designation text-theme after:!bg-theme">
-                    <b class="font-normal is-visible">Web Developer</b>
-                    <b class="font-normal">Photographers</b>
-                    <b class="font-normal">Web Designer</b>
+                    <b class="font-normal is-visible">{{ __('Full-Stack Web Developer') }}</b>
+                    <b class="font-normal">{{  __('PHP Laravel Develuper') }}</b>
+                    <b class="font-normal">{{  __('Vue Js, Nuxt Developer') }}</b>
                 </h6>
             </div>
 

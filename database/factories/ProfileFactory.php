@@ -23,7 +23,7 @@ class ProfileFactory extends Factory
             'github' => 'www.github.com/mutaman97',
             'linkedin' => 'www.linkedin.com/in/mutaman',
             'twitter' => 'www.twitter.com/mutamanelhadi',
-            'facebook' => '',
+            'facebook' => 'www.facebook.com/mutamanelhadi',
             'devto' => 'www.dev.to/mutaman',
             'instagram' => 'www.instagram.com/mutaman',
             'youtube' => '',
