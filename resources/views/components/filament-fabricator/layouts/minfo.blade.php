@@ -27,7 +27,7 @@ null, 'portfolio_core' => null, 'clients_core' => null, 'contact_core' => null, 
             <div class="loader_line"></div>
             <div
                 class="absolute w-20 h-20 transition-all delay-300 -translate-x-1/2 -translate-y-1/2 rounded-full logo top-1/2 left-1/2 bg-nightBlack border-greyBlack flex-center">
-                <img src="assets/img/site-logo.svg" alt="Minfo">
+                <img src="assets/img/mutaman-logo.svg" alt="Mutaman">
             </div>
         </div>
         <!-- App Preloader End
@@ -45,8 +45,8 @@ null, 'portfolio_core' => null, 'clients_core' => null, 'contact_core' => null, 
                     class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-2 px-3 bg-white/10 mobile-menu-bar sm:px-6 backdrop-blur-md xl:hidden">
                     <div class="text-lg font-medium name">
                         <a href="index.html" class="flex items-center gap-2 text-black dark:text-white">
-                            <img src="assets/img/site-logo.svg" alt="Minfo">
-                            <span>Minfo</span>
+                            <img src="assets/img/mutaman-logo.svg" alt="Mutaman">
+                            <span>{{  __('Mutaman') }}</span>
                         </a>
                     </div>
                     <!-- Mobile Hamburger Menu Start -->
@@ -202,7 +202,7 @@ null, 'portfolio_core' => null, 'clients_core' => null, 'contact_core' => null, 
                     <!-- Site Logo Start -->
                     <div class="flex border rounded-full logo w-15 h-15 border-platinum dark:border-metalBlack flex-center">
                         <a href="index.html">
-                            <img src="assets/img/site-logo.svg" alt="Minfo">
+                            <img src="assets/img/mutaman-logo.svg" alt="Mutaman">
                         </a>
                     </div>
                     <!-- Site Logo Start -->

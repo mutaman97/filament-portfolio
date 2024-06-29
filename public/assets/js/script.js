@@ -15,7 +15,7 @@
                 }, 1000),
                 setTimeout(function() {
                     s && s.parentNode && s.parentNode.removeChild(s);
-                }, 
+                },
             2000));
     }, 1000);
     /* Preloader End */
@@ -334,23 +334,23 @@
     /* ============================================================ */
     /* Scroll Top
     /* ============================================================ */
-    $('body').append(
-        "<a href='#top' title='Scroll Top' id='scroll-top' class='topbutton'><i class='far fa-level-up-alt'></i></a>"
-    );
-    var $scrolltop = $('#scroll-top');
-    $(window).on('scroll', function () {
-        if ($(this).scrollTop() > $(this).height()) {
-            $scrolltop.addClass('btn-show').removeClass('btn-hide');
-        } else {
-            $scrolltop.addClass('btn-hide').removeClass('btn-show');
-        }
-    });
-    $("a[href='#top']").on('click', function () {
-        $('html, body').animate( {
-                scrollTop: 0,
-        }, 1000);
-        return false;
-    });
+    // $('body').append(
+    //     "<a href='#top' title='Scroll Top' id='scroll-top' class='topbutton'><i class='far fa-level-up-alt'></i></a>"
+    // );
+    // var $scrolltop = $('#scroll-top');
+    // $(window).on('scroll', function () {
+    //     if ($(this).scrollTop() > $(this).height()) {
+    //         $scrolltop.addClass('btn-show').removeClass('btn-hide');
+    //     } else {
+    //         $scrolltop.addClass('btn-hide').removeClass('btn-show');
+    //     }
+    // });
+    // $("a[href='#top']").on('click', function () {
+    //     $('html, body').animate( {
+    //             scrollTop: 0,
+    //     }, 1000);
+    //     return false;
+    // });
 
 
 })(jQuery);
