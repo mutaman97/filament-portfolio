@@ -60,6 +60,15 @@
                         src="{{ asset('storage/' . $info->hero_section_image)}}"
                         class="hidden dark:block"
                         alt="Hero Image - Dark Mode">
+                @else
+                    <img
+                        src="{{ asset('img/core/hero-image.png') }}"
+                        class="dark:hidden"
+                        alt="Hero Image - Light Mode">
+                    <img
+                        src="{{ asset('img/core/hero-image.png') }}"
+                        class="hidden dark:block"
+                        alt="Hero Image - Dark Mode">
                 @endif
             </div>
         </div>
