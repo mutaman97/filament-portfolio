@@ -2,25 +2,41 @@
 <div class="w-full mx-auto minfo__sidebar__wrapper xl:fixed xl:top-1/2 xl:left-4 2xl:left-14 xl:-translate-y-1/2 md:max-w-sidebar xl:max-2xl:max-w-xs z-999">
     <div class="p-3 mb-3 overflow-hidden minfo__sidebar bg-white dark:bg-nightBlack rounded-2xl">
         <div class="mx-4 mt-12 text-center user-info lg:mx-6">
-            <a href="/"
+            <a href="#"
                class="w-36 mb-2.5 h-3w-36 block mx-auto border-6 border-platinum dark:border-[#2f2f2f] overflow-hidden rounded-full">
                 @if($profile->avatar)
                     <x-curator-glider
-                        class="hidden dark:block w-full h-full rounded-full"
+                        class="hidden dark:block w-full h-full rounded-full bg-secondary-300 bg-gradient-to-tl from-primary-500 to-tertiary-500"
                         :media="$profile->avatar" />
                 @else
                     <img
                         src="{{ asset('img/core/profile-picture.png') }}"
-                        class="hidden dark:block w-full h-full rounded-full"
+                        class="hidden dark:block w-full h-full rounded-full bg-secondary-300 bg-gradient-to-tl from-primary-500 to-tertiary-500"
                         alt="{{  $profile->user->name }}"> <!--Image for Dark Version -->
                     <img
                         src="{{ asset('img/core/profile-picture.png') }}"
-                        class="dark:hidden w-full h-full rounded-full"
+                        class="dark:hidden w-full h-full rounded-full bg-secondary-300 bg-gradient-to-tl from-primary-500 to-tertiary-500"
                         alt="{{  $profile->user->name }}"> <!--Image for Light Version -->
                 @endif
 
             </a>
             <h6 class="mb-1 text-lg font-semibold text-black dark:text-white name">{{ $profile->user->name }}</h6>
+            @if($profile->is_open_to_work)
+                @if($profile->linkedin)
+
+                    <a href="{{'https://' . $profile->linkedin }}" target="_blank">
+                        @endif
+                        <div
+                            class="absolute -ml-12 -mt-15 inline-block w-auto rounded-sm bg-gradient-to-tl from-primary-500 to-indigo-500 p-1 text-xs text-white lg:-mt-16">
+                            <span class="flex items-center gap-1 font-semibold">
+                                <ion-icon class="h-3 w-3" name="logo-linkedin"></ion-icon>
+                                {{ __('Open to Work') }}
+                            </span>
+                        </div>
+                        @if($profile->linkedin)
+                    </a>
+                @endif
+            @endif
             <div class="leading-none cd-headline clip is-full-width">
                 <h6 class="text-sm cd-words-wrapper designation text-theme after:!bg-theme">
                     <b class="font-normal is-visible">{{ __('Full-Stack Web Developer') }}</b>

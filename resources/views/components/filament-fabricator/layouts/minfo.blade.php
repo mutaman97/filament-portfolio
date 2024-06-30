@@ -12,6 +12,9 @@ null, 'portfolio_core' => null, 'clients_core' => null, 'contact_core' => null, 
 
 <body class="relative custom_cursor">
     @if(!$maintenance || $discovery && auth()->user())
+
+        <x-filament-fabricator::page-blocks :blocks="$page->blocks" />
+
         <!-- Custom Cursor Start -->
         <div
             class="custom_cursor_one fixed top-0 left-0 w-8 h-8 border border-gray-400 rounded-full pointer-events-none">
@@ -339,7 +342,6 @@ null, 'portfolio_core' => null, 'clients_core' => null, 'contact_core' => null, 
                         <x-about.minfo-section />
                     @endif
 
-                    {{--<x-filament-fabricator::page-blocks :blocks="$page->blocks" />--}}
 
                     <!-- My Services Section Start -->
                     <div data-scroll-index="2" id="service"
