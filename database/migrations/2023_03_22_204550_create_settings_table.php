@@ -24,10 +24,10 @@ return new class extends Migration {
             $table->string('background_image_size')->default('bg-cover');
             $table->string('background_image_repeat')->default('bg-no-repeat');
             $table->boolean('dark_mode')->default(true);
-            $table->string('meta_title')->nullable();
-            $table->string('meta_author')->nullable();
-            $table->string('meta_description')->nullable();
-            $table->string('meta_keywords', 2048)->nullable();
+            $table->string('meta_title', 255)->nullable();
+            $table->string('meta_author', 255)->nullable();
+            $table->string('meta_description', 255)->nullable();
+            $table->string('meta_keywords', 255)->nullable();
             $table->string('meta_robots')->nullable();
             $table->string('meta_google_site_verification')->nullable();
             $table->text('google_fonts_code')->nullable();
