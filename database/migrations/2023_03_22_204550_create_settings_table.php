@@ -27,7 +27,7 @@ return new class extends Migration {
             $table->string('meta_title')->nullable();
             $table->string('meta_author')->nullable();
             $table->string('meta_description')->nullable();
-            $table->string('meta_keywords')->nullable();
+            $table->string('meta_keywords', 1024)->nullable();
             $table->string('meta_robots')->nullable();
             $table->string('meta_google_site_verification')->nullable();
             $table->text('google_fonts_code')->nullable();
