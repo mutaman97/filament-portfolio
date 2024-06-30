@@ -30,7 +30,10 @@ class ProfileFactory extends Factory
             'medium' => '',
             'twitch' => '',
             'skills' => 'PHP, Laravel, Filament, Vue Js, Tailwind, Livewire, Python',
-            'about' => '<p>Enthusiastic full-stack developer with a robust skill set encompassing front-end technologies such as HTML, CSS, and JavaScript, coupled with proficiency in back-end languages like PHP and Python.</p><p>Experienced in designing and implementing database structures, API integrations, and responsive user interfaces.</p><br><p>Committed to writing clean, modular code, I bring a detail-oriented approach to development projects.</p><p>Versatile in utilizing frameworks like Laravel, Vue and Nuxt, I am equally adept at crafting scalable, efficient solutions on both ends of the tech stack.</p>'
+            'about' => '<p>Enthusiastic full-stack developer with a robust skill set encompassing front-end technologies such as HTML, CSS, and JavaScript, coupled with proficiency in back-end languages like PHP and Python.</p><p>Experienced in designing and implementing database structures, API integrations, and responsive user interfaces.</p><br><p>Committed to writing clean, modular code, I bring a detail-oriented approach to development projects.</p><p>Versatile in utilizing frameworks like Laravel, Vue and Nuxt, I am equally adept at crafting scalable, efficient solutions on both ends of the tech stack.</p>',
+            'is_open_to_work' => true,
+//            'document' => true,
+            'is_downloadable' => true,
         ];
     }
 }

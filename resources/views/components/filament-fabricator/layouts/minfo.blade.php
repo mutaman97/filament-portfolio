@@ -44,7 +44,7 @@ null, 'portfolio_core' => null, 'clients_core' => null, 'contact_core' => null, 
                 <div
                     class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-2 px-3 bg-white/10 mobile-menu-bar sm:px-6 backdrop-blur-md xl:hidden">
                     <div class="text-lg font-medium name">
-                        <a href="index.html" class="flex items-center gap-2 text-black dark:text-white">
+                        <a href="/" class="flex items-center gap-2 text-black dark:text-white">
                             <img src="assets/img/mutaman-logo.svg" alt="Mutaman">
                             <span>{{  __('Mutaman') }}</span>
                         </a>
@@ -201,7 +201,7 @@ null, 'portfolio_core' => null, 'clients_core' => null, 'contact_core' => null, 
 
                     <!-- Site Logo Start -->
                     <div class="flex border rounded-full logo w-15 h-15 border-platinum dark:border-metalBlack flex-center">
-                        <a href="index.html">
+                        <a href="/">
                             <img src="assets/img/mutaman-logo.svg" alt="Mutaman">
                         </a>
                     </div>
