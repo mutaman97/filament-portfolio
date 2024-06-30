@@ -23,7 +23,7 @@
                         <a href="{{'https://' . $profile->linkedin }}" target="_blank">
                             @endif
                             <div
-                                class="absolute -ml-12 -mt-10 inline-block w-auto rounded-sm bg-gradient-to-tl from-primary-500 to-indigo-500 p-1 text-xs text-white lg:-mt-16">
+                                class="absolute -ml-12 -mt-10 inline-block w-auto rounded-sm bg-gradient-to-tl from-primary-500 to-indigo-500 p-1 text-xs text-white md:-mt-10 lg:-mt-10">
                                 <span class="flex items-center gap-1 font-semibold">
                                     <ion-icon class="h-3 w-3" name="logo-linkedin"></ion-icon>
                                     {{ __('Open to Work') }}
