@@ -49,7 +49,7 @@ null, 'portfolio_core' => null, 'clients_core' => null, 'contact_core' => null, 
                     <div class="text-lg font-medium name">
                         <a href="/" class="flex items-center gap-2 text-black dark:text-white">
                             <img src="assets/img/mutaman-logo.svg" alt="Mutaman">
-                            <span>{{  __('Mutaman') }}</span>
+{{--                            <span>{{  __('Mutaman') }}</span>--}}
                         </a>
                     </div>
                     <!-- Mobile Hamburger Menu Start -->
