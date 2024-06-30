@@ -18,25 +18,24 @@
                         class="dark:hidden w-full h-full rounded-full bg-secondary-300 bg-gradient-to-tl from-primary-500 to-tertiary-500"
                         alt="{{  $profile->user->name }}"> <!--Image for Light Version -->
                 @endif
+                @if($profile->is_open_to_work)
+                    @if($profile->linkedin)
+                        <a href="{{'https://' . $profile->linkedin }}" target="_blank">
+                            @endif
+                            <div
+                                class="absolute -ml-12 -mt-10 inline-block w-auto rounded-sm bg-gradient-to-tl from-primary-500 to-indigo-500 p-1 text-xs text-white lg:-mt-16">
+                                <span class="flex items-center gap-1 font-semibold">
+                                    <ion-icon class="h-3 w-3" name="logo-linkedin"></ion-icon>
+                                    {{ __('Open to Work') }}
+                                </span>
+                            </div>
+                            @if($profile->linkedin)
+                        </a>
+                    @endif
+                @endif
 
             </a>
             <h6 class="mb-1 text-lg font-semibold text-black dark:text-white name">{{ $profile->user->name }}</h6>
-            @if($profile->is_open_to_work)
-                @if($profile->linkedin)
-
-                    <a href="{{'https://' . $profile->linkedin }}" target="_blank">
-                        @endif
-                        <div
-                            class="absolute -ml-12 inline-block w-auto rounded-sm bg-gradient-to-tl from-primary-500 to-indigo-500 p-1 text-xs text-white lg:-mt-16">
-                            <span class="flex items-center gap-1 font-semibold">
-                                <ion-icon class="h-3 w-3" name="logo-linkedin"></ion-icon>
-                                {{ __('Open to Work') }}
-                            </span>
-                        </div>
-                        @if($profile->linkedin)
-                    </a>
-                @endif
-            @endif
             <div class="leading-none cd-headline clip is-full-width">
                 <h6 class="text-sm cd-words-wrapper designation text-theme after:!bg-theme">
                     <b class="font-normal is-visible">{{ __('Full-Stack Web Developer') }}</b>
