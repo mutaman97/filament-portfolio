@@ -42,7 +42,7 @@ null, 'portfolio_core' => null, 'clients_core' => null, 'contact_core' => null, 
 
                 <!-- Mobile Menu Bar Start -->
                 <div
-                    class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-2 px-3 bg-white/10 mobile-menu-bar sm:px-6 backdrop-blur-md xl:hidden">
+                    class="fixed top-0 left-0 right-0 z-30 flex items-center justify-between p-2 px-3 bg-white/10 mobile-menu-bar sm:px-6 backdrop-blur-md xl:hidden">
                     <div class="text-lg font-medium name">
                         <a href="/" class="flex items-center gap-2 text-black dark:text-white">
                             <img src="assets/img/mutaman-logo.svg" alt="Mutaman">
@@ -197,7 +197,7 @@ null, 'portfolio_core' => null, 'clients_core' => null, 'contact_core' => null, 
 
                 <!-- Nav/Navigation Start -->
                 <div
-                    class="minfo__nav__wrapper bg-snowWhite dark:bg-power__black max-xl:hidden fixed top-1/2 -translate-y-1/2 right-4 2xl:right-14 z-999 flex items-center flex-col gap-4 border border-platinum dark:border-metalBlack rounded-4xl px-2.5 py-4">
+                    class="minfo__nav__wrapper bg-snowWhite dark:bg-power__black max-xl:hidden fixed top-1/2 -translate-y-1/2 right-4 2xl:right-14 z-30 flex items-center flex-col gap-4 border border-platinum dark:border-metalBlack rounded-4xl px-2.5 py-4">
 
                     <!-- Site Logo Start -->
                     <div class="flex border rounded-full logo w-15 h-15 border-platinum dark:border-metalBlack flex-center">
