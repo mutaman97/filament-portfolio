@@ -17,6 +17,7 @@ use App\Models\Newsletter;
 use Database\Factories\ExperienceFactory;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -32,7 +33,9 @@ class DatabaseSeeder extends Seeder
             ->create([
                 'name' => 'Mutaman',
                 'email' => 'mutamanelhadi97@gmail.com',
-                'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+//                'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+                'password' => Hash::make('@O999o19o12'),
+
             ]);
         $setting = Setting::factory()
             ->hasLayout()
@@ -42,13 +45,15 @@ class DatabaseSeeder extends Seeder
             ]);
         Mail::factory(20)->create();
         Newsletter::factory(10)->create();
-        Course::factory(2)->create();
+//        Course::factory(2)->create();
         Skill::factory(6)->create();
-//        $this->call([
-//            SkillsTableSeeder::class
-//        ]);
+        $this->call([
+            //SkillsTableSeeder::class
+            ExperiencesTableSeeder::class,
+            CoursesTableSeeder::class
+        ]);
 //        Project::factory(4)->create();
-        Experience::factory(3)->create();
+//        Experience::factory(3)->create();
         Category::factory()->create();
         DB::table('pages')
             ->insert([

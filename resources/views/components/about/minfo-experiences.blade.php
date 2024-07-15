@@ -23,7 +23,11 @@
                 </h6>
                 <p class="text-[13px] md:text-sm text-theme">
                     {{ \Carbon\Carbon::parse($experience->start_date)->format('F, Y') }} -
-                    {{ \Carbon\Carbon::parse($experience->end_date)->format('F, Y') }}
+                    @if($experience->status == 'Ongoing')
+                        {{  __('Now') }}
+                    @else
+                        {{ \Carbon\Carbon::parse($experience->end_date)->format('F, Y') }}
+                    @endif
                 </p>
             </div>
             <div

@@ -7,8 +7,7 @@
             My <span class="font-semibold text-theme">{{  __('Education') }}</span>
         </h2>
         <p class="max-w-xl mt-4 md:mt-6 subtitle">
-            I design products that are more than pretty. I make them shippable and usable, tempor
-            non mollit dolor et do aute
+            In this section, I highlight my educational journey, showcasing the key courses that have shaped my skills and expertise.
         </p>
     </div>
 
