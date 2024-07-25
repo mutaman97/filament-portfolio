@@ -5,6 +5,7 @@ namespace Database\Factories;
 use App\Models\Category;
 use Awcodes\Curator\Models\Media;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
 /**
@@ -12,6 +13,51 @@ use Illuminate\Support\Str;
  */
 class ProjectFactory extends Factory
 {
+    protected static array $projects = [
+        [
+            'name' => 'Multi tenancy Store Builder',
+            'slug' => 'multi-tenancy-store-builder',
+            'image_cover' => 'assets/img/portfolio/portfolio-img1.png',
+            'short_description' => 'Framework for creating Vue.js applications.',
+            'content' => 'test',
+            'external_link' => 'https://link.com',
+            'is_active' => true,
+            'category_id' => '1',
+        ],
+        [
+            'name' => 'Nuxt',
+            'slug' => 'nuxt',
+            'image_cover' => 'assets/img/portfolio/portfolio-img2.png',
+            'short_description' => 'Framework for creating Vue.js applications.',
+            'content' => 'test',
+            'external_link' => 'https://link.com',
+            'is_active' => true,
+            'category_id' => '1',
+        ],
+        [
+            'name' => 'Nuxt',
+            'slug' => 'nuxt',
+            'image_cover' => 'assets/img/portfolio/portfolio-img2.png',
+            'short_description' => 'Framework for creating Vue.js applications.',
+            'content' => 'test',
+            'external_link' => 'https://link.com',
+            'is_active' => true,
+            'category_id' => '1',
+        ],
+        [
+            'name' => 'Nuxtfffff',
+            'slug' => 'nuxt',
+            'image_cover' => 'assets/img/portfolio/portfolio-img1.png',
+            'short_description' => 'Framework for creating Vue.js applications.',
+            'content' => 'test',
+            'external_link' => 'https://link.com',
+            'is_active' => true,
+            'category_id' => '1',
+        ],
+    ];
+
+    private static int $currentIndex = 0;
+
     /**
      * Define the model's default state.
      *
@@ -19,20 +65,55 @@ class ProjectFactory extends Factory
      */
     public function definition(): array
     {
-        $name = $this->faker->words(2, true);
+        $project = self::$projects[self::$currentIndex];
+        $fileName = pathinfo($project['image_cover'], PATHINFO_BASENAME);
 
-        // Create or get a media instance
-        $media = Media::factory()->create();
+        $directory = config('curator.directory');
+        $disk = config('curator.disk');
+
+        if (!Storage::disk($disk)->exists($directory . '/' . $fileName)) {
+            $fileContents = file_get_contents(public_path($project['image_cover']));
+            Storage::disk($disk)->put($directory . '/' . $fileName, $fileContents);
+        }
+
+        $filePath = Storage::disk($disk)->path($directory . '/' . $fileName);
+        $fileExtension = pathinfo($filePath, PATHINFO_EXTENSION);
+        $fileSize = filesize($filePath);
+
+        // Get the MIME type of the file
+        $fileinfo = finfo_open(FILEINFO_MIME_TYPE);
+        $fileMimeType = finfo_file($fileinfo, $filePath);
+        finfo_close($fileinfo);
+
+        $media = Media::factory()->create([
+            'name' => pathinfo($fileName, PATHINFO_FILENAME),
+            'path' => $directory . '/' . $fileName,
+            'ext' => $fileExtension,
+            'type' => $fileMimeType,
+            'alt' => pathinfo($fileName, PATHINFO_FILENAME),
+            'title' => null,
+            'caption' => null,
+            'description' => null,
+            'width' => null,
+            'height' => null,
+            'disk' => $disk,
+            'directory' => $directory,
+            'size' => $fileSize ?? null,
+            'visibility' => 'public',
+        ]);
+
+        // Increment the index for the next run
+        self::$currentIndex = (self::$currentIndex + 1) % count(self::$projects);
 
         return [
-            'name' => $name,
-            'slug' => Str::slug($name),
+            'name' => $project['name'],
+            'slug' => $this->faker->slug(),
             'image_cover' => $media,
-            'short_description' => $this->faker->optional()->text(200),
-            'content' => $this->faker->optional()->paragraphs(3, true),
-            'external_link' => $this->faker->optional()->url,
-//            'is_active' => $this->faker->boolean,
-            'category_id' => Category::factory(), // Assuming you have a Category model and factory
+            'short_description' => $project['short_description'],
+            'content' => $project['content'],
+            'external_link' => $project['external_link'],
+            'is_active' => $project['is_active'],
+            'category_id' => $project['category_id']
         ];
 
     }

@@ -1,20 +1,10 @@
-## <p align="center"> Warriorfolio 2 </p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/mviniciusca/warriorfolio/v2-dev-master/public/img/gif/ezgif-7-41f5195607.gif"  alt="Warriorfolio 2 wip">
-</p>
-
+## <p align="center">FillamentPHP Portfolio </p>
 ___
 
-### Installation
-```
-composer create-project mviniciusca/warriorfolio
-```
+
 ### Quick Documentation
-- [ Warriorfolio 2 ](#-warriorfolio-2-)
-  - [Installation](#installation)
   - [Quick Documentation](#quick-documentation)
-  - [Introduction to Warriorfolio 2](#introduction-to-warriorfolio-2)
+  - [Introduction](#introduction)
   - [Features](#features)
   - [Additional Resources](#additional-resources)
     - [Content Blocks](#content-blocks)
@@ -26,11 +16,10 @@ composer create-project mviniciusca/warriorfolio
   - [Documentation](#documentation)
   - [Contributions, Feedback, and Bugs Report](#contributions-feedback-and-bugs-report)
   - [Support](#support)
-  - [Acknowledgments](#acknowledgments)
+  
   - [License](#license)
 
-### Introduction to Warriorfolio 2
-Warriorfolio aims to be simple, fast, and effective in creating your portfolio. Arriving in its new version more robust, smarter, flexible, and with new intuitive features. Designed with a modular concept, you can easily choose the order in which your page will be assembled and displayed to the public. From a Landing Page to a complete site with separate pages, but with modules that integrate with each other, like a true LEGO, Warriorfolio 2 is the ideal tool for you who want to have a simple, fast, and effective portfolio.
+### Introduction
 
 Designed to be 100% managed by the Control Panel, without the need for deep technical knowledge in programming, PHP, or even in Laravel.
 
@@ -75,7 +64,7 @@ This is a PHP application with Laravel and Filament at its Core. Filament is a s
 
 Filament is powered by Livewire technology, which is a framework for Laravel that allows the creation of real-time applications without the need for deep JavaScript knowledge. Livewire is a product of Caleb Porzio, creator of AlpineJs.
 
-Warriorfolio 2 is also under the guardianship of one of the world's largest frameworks, Laravel. Created by Taylor Otwell, Laravel is a robust, secure, scalable framework with complete and easy-to-understand documentation. Laravel is a framework that is constantly evolving and is a highly tested product with an active and engaged community.
+FilamentPHP Portfolio is also under the guardianship of one of the world's largest frameworks, Laravel. Created by Taylor Otwell, Laravel is a robust, secure, scalable framework with complete and easy-to-understand documentation. Laravel is a framework that is constantly evolving and is a highly tested product with an active and engaged community.
 
 ### Requirements 
 - 🐘 PHP 8.1 or higher;
@@ -85,10 +74,6 @@ Warriorfolio 2 is also under the guardianship of one of the world's largest fram
 - 🌱 NPM;
 - 💎 800MB of disk space or higher;
 
-### Documentation
-[Visit the Official Documentation](https://warriorfolio.vercel.app/) from Warriorfolio on Vercel
-
-
 ### Contributions, Feedback, and Bugs Report
 If you have found a bug, or want to contribute to the project, or even give feedback, feel free to open an issue or a pull request.
 
@@ -97,16 +82,8 @@ Feel free to contribute, fork, and leave your feedback.
 ### Support
 Feel free to open an issue or a pull request. Your feedback is very important to me.
 
-### Acknowledgments
-- To the users of Warriorfolio 1;
-- To the feedback and contributions of Warriorfolio 1 users;
-- Taylor Otwell, creator of Laravel;
-- Dan Harrin, Zep Fietje, and the entire PHP community, creators of Filament;
-- Caleb Porzio, creator of Livewire;
-- To the entire PHP and Laravel community;
-
 ### License
-Warriorfolio 2 is an Open Source application and is under the MIT license.
+FilamentPHP Portfolio is an Open Source application and is under the MIT license.
 
 
 

@@ -47,14 +47,14 @@ class DatabaseSeeder extends Seeder
         Newsletter::factory(10)->create();
 //        Course::factory(2)->create();
         Skill::factory(6)->create();
+        Category::factory()->create();
         $this->call([
             //SkillsTableSeeder::class
             ExperiencesTableSeeder::class,
             CoursesTableSeeder::class
         ]);
-//        Project::factory(4)->create();
+        Project::factory(4)->create();
 //        Experience::factory(3)->create();
-        Category::factory()->create();
         DB::table('pages')
             ->insert([
                 'title' => 'Home',
