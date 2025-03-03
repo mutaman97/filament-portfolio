@@ -36,7 +36,15 @@ class ExperiencesTableSeeder extends Seeder
                 'description' => 'I specialized in building end-to-end web solutions tailored to client needs. I utilized a diverse tech stack, including HTML, CSS, JavaScript, Vue.js, Nuxt and backend technologies like Php, Laravel, ASP.Net ',
                 'institution' => 'Aldana Computers Tech',
                 'start_date' => '2023-12-15',
-                'end_date' => '2023-12-15',
+                'end_date' => '2023-7-15',
+                'status' => 'Completed',
+            ],
+            [
+                'name' => 'Software Developer',
+                'description' => 'I specialize in building dynamic and scalable web applications using Vue.js, Vuetify, and Laravel. I develop intuitive user interfaces with Vue.js and Vuetify, while leveraging Laravel for robust backend solutions. I also design and implement RESTful APIs to ensure seamless data exchange and integration across platforms.',
+                'institution' => 'Richman General Trading',
+                'start_date' => '2024-8-1',
+                'end_date' => '2024-8-1',
                 'status' => 'Ongoing',
             ]
         ];

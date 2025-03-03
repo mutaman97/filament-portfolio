@@ -17,7 +17,7 @@ class ProfileFactory extends Factory
     public function definition(): array
     {
         return [
-            'localization' => 'Sharjah, United Arab Emirates',
+            'localization' => 'Majan, Dubai, United Arab Emirates',
             'job_position' => 'Full Stack Web Developer',
             'dribbble' => '',
             'github' => 'www.github.com/mutaman97',
@@ -29,8 +29,8 @@ class ProfileFactory extends Factory
             'youtube' => '',
             'medium' => '',
             'twitch' => '',
-            'skills' => 'PHP, Laravel, Filament, Vue Js, Tailwind, Livewire, Python',
-            'about' => '<p>Enthusiastic full-stack developer with a robust skill set encompassing front-end technologies such as HTML, CSS, and JavaScript, coupled with proficiency in back-end languages like PHP and Python.</p><p>Experienced in designing and implementing database structures, API integrations, and responsive user interfaces.</p><br><p>Committed to writing clean, modular code, I bring a detail-oriented approach to development projects.</p><p>Versatile in utilizing frameworks like Laravel, Vue and Nuxt, I am equally adept at crafting scalable, efficient solutions on both ends of the tech stack.</p>',
+            'skills' => 'PHP, Laravel, Filament, Vue Js, Javascript, Tailwind CSS, Livewire, Node JS',
+            'about' => '<p>Enthusiastic full-stack developer with a robust skill set encompassing front-end technologies such as HTML, CSS, and JavaScript, coupled with proficiency in back-end languages like PHP, nodejs and Python.</p><p>Experienced in designing and implementing database structures, API integrations, and responsive user interfaces.</p><br><p>Committed to writing clean, modular code, I bring a detail-oriented approach to development projects.</p><p>Versatile in utilizing frameworks like Laravel, Vue and Nuxt, I am equally adept at crafting scalable, efficient solutions on both ends of the tech stack.</p>',
             'is_open_to_work' => true,
             'document' => 'public/profile/document/Mutaman-Resume.pdf',
             'is_downloadable' => true,

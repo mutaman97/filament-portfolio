@@ -15,8 +15,8 @@ class ProjectFactory extends Factory
 {
     protected static array $projects = [
         [
-            'name' => 'Multi tenancy Store Builder',
-            'slug' => 'multi-tenancy-store-builder',
+            'name' => 'Laravel Multi tenancy Store Builder',
+            'slug' => 'laravel-multi-tenancy-store-builder',
             'image_cover' => 'assets/img/portfolio/portfolio-img1.png',
             'short_description' => 'Framework for creating Vue.js applications.',
             'content' => 'test',
@@ -25,8 +25,8 @@ class ProjectFactory extends Factory
             'category_id' => '1',
         ],
         [
-            'name' => 'Nuxt',
-            'slug' => 'nuxt',
+            'name' => 'Laravel Vue JS Quotation System',
+            'slug' => 'laravel-vuejs-quotation-system',
             'image_cover' => 'assets/img/portfolio/portfolio-img2.png',
             'short_description' => 'Framework for creating Vue.js applications.',
             'content' => 'test',
@@ -35,8 +35,8 @@ class ProjectFactory extends Factory
             'category_id' => '1',
         ],
         [
-            'name' => 'Nuxt',
-            'slug' => 'nuxt',
+            'name' => 'Laravel, Filament php portfolio Website',
+            'slug' => 'my-portfolio-website',
             'image_cover' => 'assets/img/portfolio/portfolio-img2.png',
             'short_description' => 'Framework for creating Vue.js applications.',
             'content' => 'test',
@@ -45,8 +45,18 @@ class ProjectFactory extends Factory
             'category_id' => '1',
         ],
         [
-            'name' => 'Nuxtfffff',
-            'slug' => 'nuxt',
+            'name' => 'Laravel Breeze, Vue.js Cart System',
+            'slug' => 'laravel-breeze-vuejs-cart-system',
+            'image_cover' => 'assets/img/portfolio/portfolio-img1.png',
+            'short_description' => 'Framework for creating Vue.js applications.',
+            'content' => 'test',
+            'external_link' => 'https://link.com',
+            'is_active' => true,
+            'category_id' => '1',
+        ],
+        [
+            'name' => 'School Canteen Management System',
+            'slug' => 'school-canteen-management-system',
             'image_cover' => 'assets/img/portfolio/portfolio-img1.png',
             'short_description' => 'Framework for creating Vue.js applications.',
             'content' => 'test',
